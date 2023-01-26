@@ -1,0 +1,53 @@
+.explore-container {
+  height: 3rem;
+  margin-top: 1.5rem;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.find-out-btn {
+  height: 3rem;
+  width: 10rem;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  transition: 800ms;
+  box-shadow: 
+	2px 2px 4px rgba(0, 0, 0, 0.75),
+	inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+	inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+  background: #D13939;
+}
+
+#arrow1 {
+  opacity: 0.1;
+}
+
+.find-out-btn p {
+  margin-right: 0.5rem;
+}
+
+.find-out-btn:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 678px) {
+  .explore-container {
+    margin-top: 1rem;
+    height: 2rem;
+  }
+
+  .find-out-btn {
+    height: 2.3rem;
+    width: 7rem;
+    font-size: 0.6rem;
+  }
+
+}

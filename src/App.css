@@ -1,0 +1,71 @@
+.App {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-nav {
+  position: fixed;
+  width: 1.5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  height: 100vh;
+}
+
+.one {
+  background-color: 1D1D1F;
+  display: flex;
+}
+
+.one-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 15%;
+}
+
+.one-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-right: 12%;
+}
+
+.two {
+}
+
+.three {
+
+}
+
+@media(max-width: 678px) {
+  .one {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  .one-left {
+    padding-left: 0;
+    margin-top: 5%;
+    width: 65%;
+  }
+  
+  .one-right {
+    padding-right: 0;
+    width: 85%;
+  }
+
+  .vertical-nav {
+    display: none;
+  }
+}
