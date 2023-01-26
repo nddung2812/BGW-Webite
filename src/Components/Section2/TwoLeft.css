@@ -1,0 +1,127 @@
+.two-left-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 27%;
+    height: 35rem;
+    border-radius: 1rem;
+    color: #fff;
+    margin-right: 6rem;
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+
+.line-1, .line-2, .line-3 {
+    height: 29%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.block {
+    width: 10.5rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+    background-color: #1d1d1d;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    transition: 400ms;
+    color:rgba(255, 255, 255, 0.932);
+}
+
+.block:hover {
+   transform: scale(1.1);
+   transition: 400ms;
+   color: #fff;
+}
+
+.centre-text {
+    background-color: #b69696da;
+    border: none;
+    color: #1d1d1d;
+}
+
+.centre-text:hover {
+    color: #1d1d1d;
+}
+
+.block h1 {
+    font-size: 3.8rem;
+}
+
+.block h1 strong {
+    color: #d13939;
+}
+.cube-icon {
+    font-size: 3rem;
+}
+
+.text-hl-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 90%;
+}
+
+.hl-top {
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #24a520
+}
+
+.hl-text {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media(max-width: 678px) {
+    .two-left-ctn {
+        width: 68%;
+        height: 39vh;
+        margin: 0;
+        justify-content: space-evenly;
+        padding: 10% 0;
+    }
+    
+    .block {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 0.6rem;
+        font-size: 0.7rem;
+    }
+    .block:hover {
+        transform: scale(1);
+     }
+
+    .block h1 {
+        font-size: 1.7rem;
+    }
+
+    .cube-icon {
+        font-size: 1.5rem;
+    }
+    
+
+    .text-hl-ctn {
+        margin-top: 0.3rem;
+        width: 95%;
+    }
+
+    .hl-top {
+        font-size: 0.8rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .hl-text {
+        font-size: 0.46rem;
+    }
+  }

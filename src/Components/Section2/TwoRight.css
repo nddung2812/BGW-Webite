@@ -1,0 +1,90 @@
+.two-right-ctn {
+    width: 30%;
+    color: rgba(255, 255, 255, 0.900);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .right-partner-heading {
+    width: 90%;
+    transition: 200ms;
+  }
+
+  .right-partner-heading:hover {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .right-partner-heading h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+
+  .right-partner-text {
+    height: 5.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+  }
+  
+  .right-partner-text:hover {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .expert-btn {
+    height: 3.1rem;
+    margin-top: 1.5rem;
+    width: 10.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1D1F;
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.75),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    transition: 400ms;
+    cursor: pointer;
+  }
+
+  .expert-btn p {
+    margin-right: 0.5rem;
+  }
+
+  #arrow2 {
+    opacity: 0.1;
+  }
+
+  @media(max-width: 678px) {
+    .two-right-ctn {
+        width: 65%;
+        height: 50%;
+    }
+
+    .right-partner-heading h1 {
+      font-size: 2rem;
+    }
+
+    .right-partner-heading {
+      width: 100%;
+    }
+
+    .right-partner-text {
+      height: 4rem;
+      font-size: 0.7rem;
+    }
+
+    .expert-btn {
+      height: 2.5rem;
+      margin-top: 1rem;
+      width: 9rem;
+      border-radius: 2rem;
+      font-size: 0.7rem;
+    }
+  
+  }

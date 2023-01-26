@@ -1,7 +1,6 @@
 .App {
   font-family: 'Work Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
 }
 
 .vertical-nav {
@@ -16,9 +15,8 @@
 .section {
   height: 100vh;
 }
-
 .one {
-  background-color: 1D1D1F;
+  background-color: #1D1D1F;
   display: flex;
 }
 
@@ -40,10 +38,16 @@
 }
 
 .two {
+  background-color: #8b2727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .three {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media(max-width: 678px) {
@@ -68,4 +72,14 @@
   .vertical-nav {
     display: none;
   }
+
+  .two {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .three {
+    flex-direction: column;
+  }
+
 }

@@ -8,11 +8,16 @@ import { TextReveal } from "./components/Section1/TextReveal";
 import { ExploreButton } from "./components/Section1/ExploreButton";
 import { Tilt3dBackground } from './components/Section1/Tilt3dBackground';
 
+import { TwoLeft } from './components/Section2/TwoLeft';
+import { TwoRight } from './components/Section2/TwoRight';
+
+import { ThreeRight } from "./components/Section3/ThreeRight";
+import { ThreeLeft } from "./components/Section3/ThreeLeft";
 function App() {
 
   return (
     <div className="App">
-        <BGWLogo  />
+      <BGWLogo  />
       <div className="vertical-nav">
         <VerticalNavbar />
       </div>
@@ -26,18 +31,13 @@ function App() {
         </div>
       </div>
       <div className='section two'>
-      Test
+          <TwoLeft />
+          <TwoRight />
       </div>
       <div className='section three'>
-      Test
+          <ThreeLeft />
+          <ThreeRight />
       </div>
-      <div className='section four'>
-      Test
-      </div>
-      <div className='section five'>
-      Test
-      </div>
-
     </div>
   )
 }

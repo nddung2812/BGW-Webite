@@ -25,11 +25,17 @@
 
 @media(max-width: 678px) {
   .bgw-logo-ctn {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.5rem;
+    left: 0.5rem;
   }
 
   .bgw-logo-ctn img {
-    width: 2rem;
+    width: 1.5rem;
+  }
+
+  #bgw-logo:hover {
+    width: 1.6rem;
   }
 }
