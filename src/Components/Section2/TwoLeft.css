@@ -98,6 +98,7 @@
         height: 5rem;
         border-radius: 0.6rem;
         margin: 0.5rem 0.1rem;
+        padding: 0.15rem;
     }
     .block:hover {
         transform: scale(1);
