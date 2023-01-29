@@ -88,18 +88,6 @@ export const MCarousel = () => {
   },[])
   
   useLayoutEffect(() => {
-    gsap.to(ring.current, {
-      rotateY: (i) => i + 150,
-      duration: 100,
-      scrollTrigger: {
-        trigger: ring.current,
-        start: "top 90%",
-        scrub: 1,
-      }
-    })
-  })
-
-  useLayoutEffect(() => {
     gsap.to(".arrow-left", {
       x: 5,
       ease: "power1.inOut", 
