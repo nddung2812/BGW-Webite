@@ -1,5 +1,10 @@
 .three-right-ctn {
   width: 30%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
 }
 
 .wheel-right {
@@ -18,14 +23,18 @@
 
 .right-menu li {
     position: absolute;
-    left: -11rem;
+    left: -19rem;
     width: 5rem;
     height: 5rem;
     list-style: none;
-    transform-origin: 20rem;
+    transform-origin: 19rem;
     transition: 1s;
     transform: rotate(0deg) translateX(15rem);
     z-index: -1;
+}
+
+#handshake {
+  width: 10rem;
 }
 
 .solution-btn {
@@ -35,7 +44,7 @@
   flex-direction: column;
   text-align: center;
   padding: 1.8rem;
-  font-size: 1.17rem;
+  font-size: 2rem;
   background-color: #00ff3c2f;
 }
 
@@ -43,6 +52,7 @@
   color: #f6f6f9;
   font-size: 0.65rem;
   height: 1.7rem;
+  margin-top: 0.5rem;
 }
 
 .right-menu .right-li1 {
@@ -240,7 +250,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    padding: 2rem;
+    padding: 12rem;
     background: #1D1D1F;
     color: #d13939;
     display: flex;
@@ -250,7 +260,7 @@
     z-index: 1;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2em; 
+    font-size: 2rem; 
     text-align: center;
     transition: 800ms;
     box-shadow: 
@@ -271,7 +281,7 @@
 .right-toggle h1 {
   color: #fff;
   font-size: 2.6rem;
-  width: 80%;
+  width: 20rem;
 }
 
 .right-menu.activated .right-toggle {
@@ -294,6 +304,7 @@
   .three-right-ctn {
     width: 70%;
     height: 40vh;
+    padding-left: 0;
   }
 
   .right-toggle h1 {
@@ -324,10 +335,10 @@
     width: 30%;
     height: 30%;
     padding: 5.5rem;
-    font-size: 1em; 
   }
-
+  
   .solution-btn {
+    font-size: 1rem; 
     padding: 1.5rem;
   }
 
@@ -356,8 +367,4 @@
     inset 4px 4px 8px rgba(0, 0, 0, 0.25);
   }
 
-  .solution-icon {
-    font-size: 5rem;
-    height: 2rem;
-  }
 }
