@@ -66,18 +66,20 @@
         background: #1d1d1f;
         width: 85%;
         height: 35%; 
-        padding: 1.5rem;                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+        padding: 1rem;
+        margin-top: 1vh;  
+        justify-content: space-evenly;                                                                                                                                                                                                                                                                                                                                                                                                                         ;
     }
 
     .wholesale-experts {
         width: 100%;
-        height: 5rem;
+        height: 12%;
         opacity: 1;
         font-size: 1.3rem;
     }
 
     .projects-btn {
-        height: 5rem;
+        height: 5%;
         font-size: 0.5rem;
         justify-content: center;
         margin-top: 0.1rem;
