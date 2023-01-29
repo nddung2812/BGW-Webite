@@ -327,8 +327,8 @@
   }
 
   .right-menu li .solution-btn {
-    width: 1rem;
-    height: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: 400ms;
   }
 
@@ -341,7 +341,7 @@
   
   .solution-btn {
     font-size: 1rem; 
-    padding: 1.5rem;
+    padding: 0.8rem;
   }
 
   .solution-btn p {
