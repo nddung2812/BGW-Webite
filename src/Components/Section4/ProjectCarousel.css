@@ -1,0 +1,102 @@
+.project-carousel-ctn {
+    display: flex;
+    width: 97%;
+    justify-content: center;
+}
+
+.close-industry-btn {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #1b2b1b;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+	2px 2px 4px rgba(0, 0, 0, 0.75),
+	inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+	inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+    position: relative;
+    top: -0.6rem;
+}
+
+.close-industry-btn:hover {
+    box-shadow: 
+	2px 2px 4px rgba(255, 255, 255, 0.25),
+	inset 2px 2px 3px rgba(0, 0, 0, 0.25),
+	inset 2px 2px 3px rgba(0, 0, 0, 0.25);
+    background-color: #8b2727;
+}
+
+.close-sign {
+    width: 1.1rem;
+    height: 3px;
+    background-color: #c4c4c4;
+    border-radius: 4px;
+}
+
+.left {
+    transform: rotate(45deg) translateX(8px) translateY(-6px);
+}
+
+.right {
+    transform: rotate(-45deg) translateX(-7px) translateY(-5px);
+}
+
+.main-carousel {
+    width: 97%;
+    height: 43rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 1rem;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .test {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(209,57,57,0) 0%, rgba(209,57,57,1) 85%);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test p {
+    color: #fff;
+  }

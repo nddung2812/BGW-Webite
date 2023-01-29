@@ -12,6 +12,8 @@
   height: 7rem;
   display: grid;
   place-items: center;
+  opacity: 0;
+  transform: translateX(-500px);
 }
 
 .right-menu {

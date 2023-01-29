@@ -23,10 +23,9 @@
   }
 
   .right-partner-text {
-    height: 5.5rem;
+    height: 5rem;
     margin-top: 1rem;
     border-bottom: 1px solid black;
-    padding-bottom: 1rem;
   }
   
   .right-partner-text:hover {
@@ -62,7 +61,7 @@
 
   @media(max-width: 678px) {
     .two-right-ctn {
-        width: 65%;
+        width: 70%;
         height: 50%;
     }
 

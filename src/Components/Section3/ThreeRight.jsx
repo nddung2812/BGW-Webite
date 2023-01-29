@@ -32,8 +32,8 @@ export const ThreeRight = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".two",
-        start: "center top",
-        scrub: 2,
+        start: "top center",
+        scrub: 1,
       }
     })
   },[])

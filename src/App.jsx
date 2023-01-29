@@ -1,7 +1,8 @@
+import { useState } from 'react';
 
 import './App.css'
 
-import { BGWLogo } from './components/Global/BGWLogo.jsx';
+// import { BGWLogo } from './components/Global/BGWLogo.jsx';
 import { VerticalNavbar } from './components/Global/VerticalNavbar.jsx';
 
 import { TextReveal } from "./components/Section1/TextReveal";
@@ -13,11 +14,20 @@ import { TwoRight } from './components/Section2/TwoRight';
 
 import { ThreeRight } from "./components/Section3/ThreeRight";
 import { ThreeLeft } from "./components/Section3/ThreeLeft";
+
+import { FourLeft } from './components/Section4/FourLeft';
+import { FourRight } from './components/Section4/FourRight';
+import { ProjectCarousel } from './components/Section4/ProjectCarousel';
+
+
 function App() {
+
+  const [divValue, setDivValue] = useState("industrial");
+  const [activated, setActivated] = useState(true);
 
   return (
     <div className="App">
-      <BGWLogo  />
+      {/* <BGWLogo /> */}
       <div className="vertical-nav">
         <VerticalNavbar />
       </div>
@@ -37,6 +47,27 @@ function App() {
       <div className='section three'>
           <ThreeLeft />
           <ThreeRight />
+      </div>
+
+      <div className='section four'>
+        {activated ? <div className="four-ctn">
+            <FourLeft 
+              divValue={divValue}
+              setActivated={setActivated}
+            />
+            {/* <FourRight 
+              divValue={divValue}
+              setDivValue={setDivValue}
+            /> */}
+          </div>  
+          :
+          <div className="four-projects-ctn">
+            <ProjectCarousel 
+              activated={activated}
+              setActivated={setActivated} 
+            />
+          </div>
+        } 
       </div>
     </div>
   )

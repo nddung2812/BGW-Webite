@@ -1,0 +1,115 @@
+#partner-ctn {
+  width: 36rem;
+  height: 25rem;
+  display: flex;
+  margin-top: 1rem;
+  border-bottom: 1px solid #d13939;
+}
+
+.industry-name {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  opacity: 0.9;
+  color: #d13939;
+  text-transform: capitalize;
+}
+
+.industry-name:hover {
+  opacity: 1;
+}
+
+.wholesaler-text {
+  font-size: 1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.partner-businesses {
+  width: 100%;
+  height: 100%;
+}
+
+.partner-business {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 14rem;
+  width: 35rem;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.business-logo-ctn {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.7rem;
+  margin: 0.5rem 0.55rem;
+  background-color: rgb(130, 130, 130);
+  box-shadow: 
+	2px 2px 8px rgba(0, 0, 0, 0.75),
+	inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+	inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+  display: grid;
+  place-items: center;
+  border-radius: 0.8rem;
+}
+
+.business-logo-ctn:hover {
+  background-color: rgba(149, 148, 148, 0.97);
+}
+
+.business-logo-ctn img:hover {
+  transform: scale(1.05);
+  transition: 400ms;
+}
+
+.partner-business img {
+  width: 95%;
+  height: auto;
+  transition: 400ms;
+}
+
+@media(max-width: 678px) {
+  #partner-ctn {
+    width: 100%;
+    height: 25rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wholesaler-text {
+    font-size: 0.7rem;
+    height: 1rem;
+    opacity: 1;
+  }
+
+  .industry-name {
+    height: 1rem;
+    font-size: 1.5rem;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+
+  .partner-business {
+    height: 7rem;
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .business-logo-ctn {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+    margin: 0.2rem 0.2rem;
+    border-radius: 0.4rem;
+  }
+}
