@@ -28,17 +28,17 @@ export const FourLeft = ({ divValue, setActivated }) => {
     })
   }
 
-  // useLayoutEffect(() => {
-  //   gsap.to('.four-left-ctn', {
-  //     x: 0,
-  //     opacity: 1,
-  //     scrollTrigger: {
-  //       trigger: '.three',
-  //       start: "center top",
-  //       scrub: true
-  //     }
-  //   })
-  // }, [])
+  useLayoutEffect(() => {
+    gsap.to('.four-left-ctn', {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '.three',
+        start: "top center",
+        scrub: true
+      }
+    })
+  }, [])
 
   const imageRotateRight = () => {
     gsap.to('#image-icon', {

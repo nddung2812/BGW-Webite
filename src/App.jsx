@@ -63,10 +63,10 @@ function App() {
               divValue={divValue}
               setActivated={setActivated}
             />
-            {/* <FourRight 
+            <FourRight 
               divValue={divValue}
               setDivValue={setDivValue}
-            /> */}
+            />
           </div>  
           :
           <div className="four-projects-ctn">

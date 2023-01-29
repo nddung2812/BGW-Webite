@@ -135,35 +135,35 @@ export const FourRight = ({ setDivValue }) => {
       <div className="industries-ctn">
         <div className={bgColor1}>
           <div className="industry-top-layer" value="industrial" onClick={handleClick}></div>
-          <FontAwesomeIcon  icon={faIndustry} size="3x" />
+          <FontAwesomeIcon  icon={faIndustry} />
         </div>
         <div className={bgColor2}>
           <div className="industry-top-layer" value="infrastructure" onClick={handleClick}></div>
-          <FontAwesomeIcon icon={faCity} size="3x"  />
+          <FontAwesomeIcon icon={faCity}  />
         </div>
         <div className={bgColor3}>
           <div className="industry-top-layer" value="commercial" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faBuilding} size="3x" />
+          <FontAwesomeIcon icon={faBuilding} />
         </div>
         <div className={bgColor4}>
           <div className="industry-top-layer" value="defence" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faShield} size="3x" />
+          <FontAwesomeIcon icon={faShield} />
         </div>
         <div className={bgColor5}>
           <div className="industry-top-layer" value="oilGas" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faFire} size="3x" />
+          <FontAwesomeIcon icon={faFire} />
         </div>
         <div className={bgColor6}>
           <div className="industry-top-layer" value="mining" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faHelmetSafety} size="3x" />
+          <FontAwesomeIcon icon={faHelmetSafety} />
         </div>
         <div className={bgColor7}>
           <div className="industry-top-layer" value="renewables" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faPlugCircleBolt} size="3x" />
+          <FontAwesomeIcon icon={faPlugCircleBolt} />
         </div>
         <div className={bgColor8}>
           <div className="industry-top-layer" value="agriculture" onClick={handleClick} ></div>
-          <FontAwesomeIcon icon={faWheatAlt} size="3x" />
+          <FontAwesomeIcon icon={faWheatAlt} />
         </div>
         </div>
     </div>
