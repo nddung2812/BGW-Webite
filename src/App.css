@@ -60,7 +60,7 @@
 
 .four-ctn {
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,6 @@
   
   .four-ctn {
     flex-direction: column-reverse;
-    height: 100vh;
   }
 
   .four-projects-ctn {
