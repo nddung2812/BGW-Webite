@@ -44,12 +44,12 @@ export const ThreeRight = () => {
       <div className="wheel-right">
           <div className={menuClass} onClick={handleClickrightWheel}>
             <div className="right-toggle">
-              <FontAwesomeIcon icon={faHandshake} size="5x"  />
+              <FontAwesomeIcon id="handshake" icon={faHandshake} size="5x"  />
               <h1>We simplify your life</h1>
             </div>
             <li className="right-li1">
               <div className="solution-btn">
-                <FontAwesomeIcon icon={faCertificate} size="2x" color="#d13939"/>  
+                <FontAwesomeIcon className="solution-icon" icon={faCertificate} size="2x" color="#d13939"/>  
                 <p>Exceptional Service</p>
               </div>
             </li>
