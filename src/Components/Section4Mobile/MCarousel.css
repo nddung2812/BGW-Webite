@@ -1,0 +1,138 @@
+.stage, .ring, .img-ctn {
+  transform-style: preserve-3d;
+  user-select:none;
+}
+
+.stage {
+  overflow:hidden;
+}
+
+.stage {
+  width: 100%;
+  height: 100vh; 
+  cursor: grab;
+  pointer-events: auto;
+
+}
+
+.stage, .ring, .carousel-container, .img-ctn {
+  position: absolute;
+}
+.carousel-container {
+  perspective: 1500px;
+  width: 360px;
+  height: 360px;  
+  left:50%;
+  top:53%;
+  transform:translate(-50%,-50%) rotateZ(6deg) ;    
+  margin-top: -6%;
+  pointer-events: none;
+}
+
+.img-ctn {
+  width: 45rem;
+  height: 36rem;
+  z-index: 0;
+  padding: 20px;
+  box-shadow: 
+  1px 1px 1px rgba(255, 255, 255, 0.25),
+  inset 4px 4px 20px rgba(0, 0, 0, 0.25),
+  inset 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.img-ctn:nth-child(n) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f3ebebb7;
+  border-radius: 4rem;
+}
+
+.img-ctn:hover ~.container{
+  display: block;
+  border:1px solid red;
+  display: none;
+}
+
+.clickMe-btn {
+  font-size: 2.3rem;
+  border-radius: 100%;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  pointer-events: auto;
+  transition: 800ms;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.clickMe-text {
+  color: #f6f6f9;
+  font-size: 4rem; 
+}
+.clickMe-btn:hover {
+  transition: 800ms;
+  opacity: 0.8;
+  pointer-events: auto;
+  background-color: #D13939;
+}
+
+.clickMe-btn:hover ~ .text {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.text {
+  height: 50%;
+  width: 80%;
+  bottom: 15rem;
+  left: 7rem;
+  position: absolute;
+  color: #f6f6f9;
+  font-size: 2.5rem;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  transition: 4000ms;
+}
+
+.text h2 {
+  color: #D13939;
+}
+
+.text span {
+  color: rgb(33, 126, 218);
+  font-weight: 800;
+}
+
+.inner-img {
+  object-fit: contain;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.ring {
+  width:100%;
+  height: 100%;
+}
+
+@media(max-width: 678px) {
+  .carousel-container {
+    perspective: 320px;
+    top:50%;
+  }
+  .ourTeam-btn {
+    top: 13rem;
+    font-size: 2rem;
+    right: -7.5rem;
+  }
+
+}

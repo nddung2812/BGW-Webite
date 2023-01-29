@@ -2,22 +2,23 @@ import { useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import './App.css'
 
-import { BGWLogo } from './components/Global/BGWLogo.jsx';
-import { VerticalNavbar } from './components/Global/VerticalNavbar.jsx';
+import { BGWLogo } from './Components/Global/BGWLogo.jsx';
+import { VerticalNavbar } from './Components/Global/VerticalNavbar.jsx';
 
-import { TextReveal } from "./components/Section1/TextReveal";
-import { ExploreButton } from "./components/Section1/ExploreButton";
-import { Tilt3dBackground } from './components/Section1/Tilt3dBackground';
+import { TextReveal } from "./Components/Section1/TextReveal";
+import { ExploreButton } from "./Components/Section1/ExploreButton";
+import { Tilt3dBackground } from './Components/Section1/Tilt3dBackground';
 
-import { TwoLeft } from './components/Section2/TwoLeft';
-import { TwoRight } from './components/Section2/TwoRight';
+import { TwoLeft } from './Components/Section2/TwoLeft';
+import { TwoRight } from './Components/Section2/TwoRight';
 
-import { ThreeRight } from "./components/Section3/ThreeRight";
-import { ThreeLeft } from "./components/Section3/ThreeLeft";
+import { ThreeRight } from "./Components/Section3/ThreeRight";
+import { ThreeLeft } from "./Components/Section3/ThreeLeft";
 
-import { FourLeft } from './components/Section4/FourLeft';
-import { FourRight } from './components/Section4/FourRight';
-import { ProjectCarousel } from './components/Section4/ProjectCarousel';
+import { FourLeft } from './Components/Section4/FourLeft';
+import { FourRight } from './Components/Section4/FourRight';
+import { ProjectCarousel } from './Components/Section4/ProjectCarousel';
+import { MCarousel } from './Components/Section4Mobile/MCarousel';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <div className="vertical-nav">
         <VerticalNavbar />
       </div>
+
       <div className='section one'>
         <div className="one-left" >
           <TextReveal />
@@ -48,10 +50,12 @@ function App() {
           <Tilt3dBackground />
         </div>
       </div>
+
       <div className='section two'>
           <TwoLeft />
           <TwoRight />
       </div>
+      
       <div className='section three'>
           <ThreeLeft />
           <ThreeRight />
@@ -77,6 +81,11 @@ function App() {
           </div>
         } 
       </div>
+
+      <div className='section five'>
+        <MCarousel />
+      </div>
+    
     </div>
   )
 }
