@@ -1,5 +1,7 @@
+import {useLayoutEffect} from 'react';
 import './ProjectCarousel.css';
 import 'swiper/css';
+import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -7,6 +9,17 @@ export const ProjectCarousel = ({ activated, setActivated }) => {
     const handleClick = () => {
         setActivated(!activated)
     }
+
+    useLayoutEffect(() => {
+      let ctx = gsap.context(() => {
+        gsap.to(".four-projects-ctn", {
+          opacity: 1,
+          duration: 1.5,
+          ease: 'none',
+        });
+      })
+  }, [activated])
+
   return (
     <div className='project-carousel-ctn'>
         <div className="main-carousel">

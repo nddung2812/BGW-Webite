@@ -86,11 +86,11 @@
 
 @media(max-width: 678px) {
     .two-left-ctn {
-        width: 68%;
-        height: 39vh;
+        width: 18rem;
+        height: 18rem;
         margin: 0;
         justify-content: space-evenly;
-        padding: 10% 0;
+        padding: 5% 0;
     }
     
     .block {

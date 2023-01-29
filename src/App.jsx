@@ -1,8 +1,8 @@
-import { useState } from 'react';
-
+import { useLayoutEffect, useState } from 'react';
+import { gsap } from 'gsap';
 import './App.css'
 
-// import { BGWLogo } from './components/Global/BGWLogo.jsx';
+import { BGWLogo } from './components/Global/BGWLogo.jsx';
 import { VerticalNavbar } from './components/Global/VerticalNavbar.jsx';
 
 import { TextReveal } from "./components/Section1/TextReveal";
@@ -25,9 +25,17 @@ function App() {
   const [divValue, setDivValue] = useState("industrial");
   const [activated, setActivated] = useState(true);
 
+  useLayoutEffect(() => {
+    gsap.to(".four-projects-ctn", {
+      opacity: 1,
+      duration: 1.5,
+      ease: 'none',
+    });
+}, [activated])
+
   return (
     <div className="App">
-      {/* <BGWLogo /> */}
+      <BGWLogo />
       <div className="vertical-nav">
         <VerticalNavbar />
       </div>

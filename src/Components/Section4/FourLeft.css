@@ -64,7 +64,7 @@
     .four-left-ctn {
         background: #1d1d1f;
         width: 85%;
-        height: 50vh;                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+        height: 44vh;                                                                                                                                                                                                                                                                                                                                                                                                                            ;
     }
 
     .wholesale-experts {
@@ -72,6 +72,17 @@
         height: 5rem;
         opacity: 1;
         font-size: 1.3rem;
+    }
+
+    .projects-btn {
+        height: 7rem;
+        font-size: 0.5rem;
+    }
+    .industry-projects, .history-btn {
+        height: 1.8rem;
+        width: 5rem;
+        border-radius: 1rem;
+        margin: 0 0.5rem;
     }
   
   }
