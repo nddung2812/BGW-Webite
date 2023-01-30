@@ -34,6 +34,7 @@
   justify-content: center;
   width: 50%;
   padding-right: 12%;
+  margin-left: 10%;
 }
 
 .two {
@@ -46,7 +47,7 @@
 .three {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   background-color: #1D1D1F;
 }
 
@@ -60,7 +61,7 @@
 
 .four-ctn {
   width: 80%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +108,7 @@
   .one-right {
     padding-right: 0;
     width: 85%;
+    margin-left: 0;
   }
 
   .vertical-nav {
@@ -124,6 +126,7 @@
   
   .four-ctn {
     flex-direction: column-reverse;
+    height: 90vh;
   }
 
   .four-projects-ctn {
@@ -133,5 +136,4 @@
     background-color: transparent;
     box-shadow: none;
   }
-
 }
