@@ -13,7 +13,7 @@
   display: grid;
   place-items: center;
   opacity: 0;
-  transform: translateX(-500px);
+  transform: translateX(1000px);
 }
 
 .right-menu {

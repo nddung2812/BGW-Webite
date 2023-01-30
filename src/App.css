@@ -70,18 +70,12 @@
 .four-projects-ctn {
   width: 65%;
   height: 80vh;
-  padding-left: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1D1D1F;
   border-radius: 1rem;
   color: #fff;
   opacity: 0;
-  box-shadow: 
-  2px 2px 4px rgba(255, 255, 255, 0.25),
-  inset 2px 2px 3px rgba(0, 0, 0, 0.25),
-  inset 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
 .five {
