@@ -32,19 +32,18 @@
 }
 
 .partner-business {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
   height: 14rem;
   width: 100%;
-  padding-left: 0.5rem;
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 5%;
+
 }
 
 .business-logo-ctn {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   padding: 0.7rem;
   margin: 0.5rem 0.55rem;
   background-color: rgb(130, 130, 130);
@@ -96,8 +95,8 @@
 
   .partner-business {
     height: 7rem;
-    width: 95%;
     margin-top: 1rem;
+    padding: 0 4%;
   }
 
   .business-logo-ctn {
