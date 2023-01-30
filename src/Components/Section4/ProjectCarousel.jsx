@@ -4,6 +4,11 @@ import 'swiper/css';
 import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
+
 
 export const ProjectCarousel = ({ activated, setActivated }) => {
     const handleClick = () => {
@@ -89,8 +94,9 @@ export const ProjectCarousel = ({ activated, setActivated }) => {
         </Swiper>
         </div>
         <div className="close-industry-btn" onClick={handleClick}>
-            <div className="close-sign left"></div>
-            <div className="close-sign right"></div>
+          <div className="xmark">
+            <FontAwesomeIcon icon={faXmark}  />
+          </div>
         </div>
     </div>
   )

@@ -28,19 +28,11 @@
     background-color: #8b2727;
 }
 
-.close-sign {
-    width: 1.1rem;
-    height: 3px;
-    background-color: #c4c4c4;
-    border-radius: 4px;
-}
-
-.left {
-    transform: rotate(45deg) translateX(7px) translateY(-6px);
-}
-
-.right {
-    transform: rotate(-45deg) translateX(-6px) translateY(-5px);
+.xmark {
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
 }
 
 .main-carousel {
@@ -125,18 +117,8 @@
         top: -0.6rem;
     }
 
-    .close-sign {
-        width: 1rem;
-        height: 2px;
-        background-color: #c4c4c4;
-        border-radius: 4px;
+    .xmark {
+        font-size: 0.7rem;
     }
-    
-    .left {
-        transform: rotate(45deg) translateX(3px) translateY(-3px);
-    }
-    
-    .right {
-        transform: rotate(-45deg) translateX(-3px) translateY(-3px);
-    }
+
   }
