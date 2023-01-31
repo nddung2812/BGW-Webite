@@ -69,7 +69,6 @@ export const MCarousel = () => {
     stage.current.addEventListener('touchend', dragEnd);
 
     let mm = gsap.matchMedia();
-      gsap.registerPlugin(ScrollTrigger);
       mm.add(
         "(min-width: 677px)", () => {
           gsap.to(ring.current, {
@@ -87,24 +86,6 @@ export const MCarousel = () => {
     return () => ctx.revert();
   },[])
   
-  useLayoutEffect(() => {
-    gsap.to(".arrow-left", {
-      x: 5,
-      ease: "power1.inOut", 
-      repeat: -1, 
-      yoyo: true, 
-    })
-  },[])
-
-  useLayoutEffect(() => {
-    gsap.to(".arrow-right", {
-      x: -5,
-      ease: "power1.inOut", 
-      repeat: -1, 
-      yoyo: true, 
-    })
-  },[])
-
   return (
     <div className="stage" 
       ref={stage} 

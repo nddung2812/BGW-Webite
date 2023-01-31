@@ -38,7 +38,7 @@
 }
 
 .partner-business {
-  height: 14rem;
+  height: 10rem;
   width: 100%;
   margin-top: 1rem;
   display: grid;
@@ -47,8 +47,8 @@
 }
 
 .business-logo-ctn {
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   padding: 0.7rem;
   margin: 0.5rem 0.55rem;
   background-color: rgb(130, 130, 130);

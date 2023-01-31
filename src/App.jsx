@@ -19,6 +19,7 @@ import { FourLeft } from './Components/Section4/FourLeft';
 import { FourRight } from './Components/Section4/FourRight';
 import { ProjectCarousel } from './Components/Section4/ProjectCarousel';
 import { MCarousel } from './Components/Section4Mobile/MCarousel';
+import { Timeline } from './Components/Section5/Timeline';
 
 
 function App() {
@@ -83,9 +84,12 @@ function App() {
       </div>
 
       <div className='section five'>
-        <MCarousel />
+        <Timeline />
       </div>
     
+      <div className="section six">
+        <MCarousel />     
+      </div>
     </div>
   )
 }

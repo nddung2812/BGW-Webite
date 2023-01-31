@@ -25,7 +25,7 @@
   align-items: flex-start;
   justify-content: center;
   width: 50%;
-  padding-left: 15%;
+  padding-left: 16%;
 }
 
 .one-right {
@@ -83,7 +83,13 @@
   align-items: center;
   justify-content: center;
   background-color: #1D1D1F;
+  height: 150vh;
 }
+
+.six {
+  background-color: #1D1D1F;
+}
+
 
 @media(max-width: 678px) {
   .one {
@@ -129,5 +135,6 @@
     opacity: 1;
     background-color: transparent;
     box-shadow: none;
+    margin-left: 1rem;
   }
 }
