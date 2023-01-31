@@ -12,11 +12,11 @@ export const Timeline = () => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   useLayoutEffect(() => {
-    gsap.to(".timeline-vertical-line", {
-      height: 1155,
+    gsap.to(".vertical-line", {
+      height: 1250,
       scrollTrigger: {
         trigger: ".five",
-        start: "top 60%",
+        start: "top 65%",
         end: "bottom 50%",
         scrub: true,
       }
@@ -26,9 +26,8 @@ export const Timeline = () => {
   useLayoutEffect(() => {
     const timelineX = gsap.timeline({scrollTrigger: {
       trigger: ".five",
-      start: "top bottom",
+      start: "top 90%",
       end: "bottom 50%",
-      markers: true,
       scrub: true,
     }})
 
@@ -133,25 +132,18 @@ export const Timeline = () => {
         </section>
 
         <section className="sec sec1">
-          <div className="history-text">
-            <h1>1938</h1>
-            <h2>ROBERT FERGUSSON</h2>
-            <p>Robert Fergusson opened in Tasmania, supplying to the domestic and commercial electrical and plumbing markets.</p>
-          </div>
+      
           <div className="bg bg1">
             <img src={AllBusinessLogos[1]} alt="" />
           </div>
+          <div className="left-horizontal-line"></div>
         </section>
 
         <section className="sec sec3">
-          <div className="history-text">
-            <h1>1938</h1>
-            <h2>ROBERT FERGUSSON</h2>
-            <p>Robert Fergusson opened in Tasmania, supplying to the domestic and commercial electrical and plumbing markets.</p>
-          </div>
           <div className="bg bg3">
-          <img src={AllBusinessLogos[3]} alt="" />
+            <img src={AllBusinessLogos[3]} alt="" />
           </div>
+          <div className="left-horizontal-line"></div>
         </section>
 
         <section className="sec sec5">
@@ -222,7 +214,10 @@ export const Timeline = () => {
 
       </div>
 
-      <div className="timeline-vertical-line"></div>
+      <div className="xAxis-line">
+        <div className="vertical-line"></div>
+        <div className="arrow-down"></div>
+      </div>
 
       <div className="five-right">
         <section className="sec sec2">

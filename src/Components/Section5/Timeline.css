@@ -2,7 +2,7 @@
   overscroll-behavior: none;
   width: 100%;
   height: 95%;
-  padding: 0 20%;
+  padding: 0 8%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -14,11 +14,43 @@
   font-size: 0.5rem;
 }
 
-.timeline-vertical-line {
-  width: 0.5rem;
-  background-color: red;
-  height: 1px;
-  left: 0;
+.five-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.xAxis-line {
+  width: 0.2rem;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-line {
+  width: 0.4rem;
+  height: 0;
+  max-height: 1250px;
+  background-color: #8b2727;
+  box-shadow: 
+  1px 1px 2px rgba(0, 0, 0, 0.75),
+  inset 1px 1px 1px rgba(255, 255, 255, 0.25),
+  inset -3px -3px 2px rgba(0, 0,0 ,0.5);
+  
+}
+
+.arrow-down {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  box-shadow: 
+  2px 2px 4px rgba(0, 0, 0, 0.75),
+  inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+  inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+  background-color: #8b2727;
 }
 
 .sec {
@@ -26,9 +58,26 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 8rem;
   margin: 1rem 0;
+}
+
+.sec1, .sec3 {
+  justify-content: flex-end;
+}
+.left-horizontal-line {
+  height: 4px;
+  background-color: #8b2727;
+  width: 3rem;
+  box-shadow: 
+  1px 1px 2px rgba(0, 0, 0, 0.75),
+  inset 1px 1px 1px rgba(255, 255, 255, 0.25),
+  inset -3px -3px 2px rgba(0, 0,0 ,0.5);
+}
+
+.sec h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .bg {
@@ -41,7 +90,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(130, 130, 130);
-  padding: 2%;
+  padding: 3%;
   box-shadow: 
   2px 2px 4px rgba(0, 0, 0, 0.75),
   inset 2px 2px 3px rgba(255, 255, 255, 0.25),
@@ -50,7 +99,7 @@
 }
 
 .bg img {
-  width: 90%;
+  width: 95%;
   object-fit: contain;
 }
 
@@ -60,7 +109,7 @@
 }
 
 .history-text {
-  width: 50%;
+  width: 1rem;
   margin: 1rem;
   visibility: hidden;
 }
@@ -75,48 +124,6 @@
   opacity: 0;
 }
 
-/* .bg1 {
-  background-image: url(https://picsum.photos/1600/800?random=0);
-}
-.bg2 {
-  background-image: url(https://picsum.photos/1600/800?random=1);
-}
-.bg3 {
-  background-image: url(https://picsum.photos/1600/800?random=2);
-}
-.bg4 {
-  background-image: url(https://picsum.photos/1600/800?random=3);
-}
-.bg5 {
-  background-image: url(https://picsum.photos/1600/800?random=4);
-}
-.bg6 {
-  background-image: url(https://picsum.photos/1600/800?random=5);
-}
-.bg7 {
-  background-image: url(https://picsum.photos/1600/800?random=6);
-}
-.bg8 {
-  background-image: url(https://picsum.photos/1600/800?random=7);
-}
-.bg9 {
-  background-image: url(https://picsum.photos/1600/800?random=8);
-}
-.bg10 {
-  background-image: url(https://picsum.photos/1600/800?random=9);
-}
-.bg11 {
-  background-image: url(https://picsum.photos/1600/800?random=10);
-}
-.bg12 {
-  background-image: url(https://picsum.photos/1600/800?random=11);
-}
-.bg13 {
-  background-image: url(https://picsum.photos/1600/800?random=12);
-}
-.bg14 {
-  background-image: url(https://picsum.photos/1600/800?random=13);
-} */
 
 
 
