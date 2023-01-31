@@ -17,9 +17,12 @@ import { ThreeLeft } from "./Components/Section3/ThreeLeft";
 
 import { FourLeft } from './Components/Section4/FourLeft';
 import { FourRight } from './Components/Section4/FourRight';
+
 import { ProjectCarousel } from './Components/Section4/ProjectCarousel';
-import { MCarousel } from './Components/Section4Mobile/MCarousel';
+
 import { Timeline } from './Components/Section5/Timeline';
+
+import { MCarousel } from './Components/Section6/MCarousel';
 
 
 function App() {
