@@ -40,7 +40,7 @@ export const ThreeLeft = () => {
         </div>
         <div className="supply-btn" onClick={movetoSection3}>
             <p>Our Experience</p>
-            <FontAwesomeIcon id="arrow3" icon={faArrowRight} size="lg" />
+            <FontAwesomeIcon id="arrow3" icon={faArrowRight} size="sm" />
         </div>
     </div>
   )

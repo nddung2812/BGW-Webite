@@ -33,7 +33,7 @@ useEffect(() => {
     <div className="explore-container" >
       <div className="find-out-btn" onClick={movetoSection3}>
         <p>Find out more</p> 
-        <FontAwesomeIcon id="arrow1" icon={faArrowRight} size="lg" /></div>
+        <FontAwesomeIcon id="arrow1" icon={faArrowRight} size="sm" /></div>
     </div>  
   )
 }

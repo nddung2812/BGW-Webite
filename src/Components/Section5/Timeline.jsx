@@ -1,15 +1,27 @@
 import { useLayoutEffect } from "react";
 
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { gsap } from "gsap";
 import AllBusinessLogos from "../Logos/TimelineBusiness";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 import "./Timeline.css";
 
 
 export const Timeline = () => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  const moveToSection6 = () => {
+    gsap.to(window, {
+      duration: 1,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: ".six",
+      }
+    })
+  }
 
   useLayoutEffect(() => {
     gsap.to(".vertical-line", {
@@ -21,6 +33,24 @@ export const Timeline = () => {
         end: "bottom 22%",
         scrub: true,
       }
+    })
+
+    gsap.to(".yoyo-start", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".five",
+        start: "top 65%",
+        end: "top 50%",
+        scrub: true,
+      }
+    })
+
+    gsap.to("#arrow5", {
+      y: 2,
+      repeat: -1,
+      duration: 1,
+      yoyo: true,
+      opacity: 1
     })
   })
 
@@ -129,7 +159,7 @@ export const Timeline = () => {
     <div className="five-ctn">
       <div className="five-left">
         <section className="sec sec0">
-           <h1>Our Timeline</h1>
+           <h1 className="tl-heading">Our Timeline</h1>
         </section>
 
         <section className="sec sec1">
@@ -269,7 +299,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">1952</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              CNW Electrical Wholesale Est.
             </div>
           </div>
           <div className="bg bg4">
@@ -283,7 +313,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">1982</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              BGW Group Est. and purchased CNW Electrical Wholesale
             </div>
           </div>
 
@@ -298,7 +328,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">1996</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              Air Additions Est.
             </div>
           </div>
           <div className="bg bg8">
@@ -312,7 +342,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">2005</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              Sherriff Electrical Wholesalers purchased by BGW
             </div>
           </div>
           <div className="bg bg10">
@@ -326,7 +356,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">2007</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              Robert Fergusson purchased by BGW.
             </div>
           </div>
           <div className="bg bg12">
@@ -340,7 +370,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">2012</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+            Cablemakers Est. by BGW. SES purchased by BGW.
             </div>
           </div>
           <div className="bg bg14">
@@ -354,7 +384,7 @@ export const Timeline = () => {
             <div className="upper-tl-text">2015</div>
             <div className="right-horizontal-line"></div>
             <div className="lower-tl-text">
-              ILA Est. by BGW.
+              EA Est. by CNW, R&M Electrical Group and Wholesale Electric Supply Company. BGW Group Solutions Est. by BGW
             </div>
           </div>
           <div className="bg bg14">
@@ -364,7 +394,10 @@ export const Timeline = () => {
         </section>
 
         <section className="sec last-tl-sec">
-          <h1>Click to see our team</h1>
+          <div className="tl-bottom-btn" onClick={moveToSection6}>
+            <p>See our team</p>
+            <FontAwesomeIcon id="arrow5" icon={faArrowDown} size="sm" />  
+          </div>
         </section>
 
       </div>

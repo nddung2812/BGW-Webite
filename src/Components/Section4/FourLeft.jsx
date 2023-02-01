@@ -40,35 +40,6 @@ export const FourLeft = ({ divValue, setActivated }) => {
     })
   }, [])
 
-  const imageRotateRight = () => {
-    gsap.to('#image-icon', {
-      rotate: 360,
-      duration: 5,
-      ease: "slow"
-    })
-  }
-
-  const resetImageRotation = () => {
-    gsap.to('#image-icon', {
-      rotate: 0,
-      duration: 3,
-    })
-  }
-
-  const clockRotateLeft = () => {
-    gsap.to('#clock-icon', {
-      rotate: -360,
-      duration: 4,
-    })
-  }
-
-  const resetClock = () => {
-    gsap.to('#clock-icon', {
-      rotate: 0,
-      duration: 3,
-    })
-  }
-
   return (
     <div className="four-left-ctn">
       <div className="wholesale-experts">Wholesaling Experts</div>
@@ -76,16 +47,12 @@ export const FourLeft = ({ divValue, setActivated }) => {
       <div className="projects-btn">
         <div className="industry-projects" 
           onClick={handleClick}
-          onMouseEnter={imageRotateRight} 
-          onMouseLeave={resetImageRotation} 
         >
           <p>Our Projects</p>
           <FontAwesomeIcon id="image-icon" icon={faImage}/>
         </div>
         <div className="history-btn" 
           onClick={moveToSection5}
-          onMouseEnter={clockRotateLeft} 
-          onMouseLeave={resetClock}
         >
           <p>Our History</p>
           <FontAwesomeIcon 

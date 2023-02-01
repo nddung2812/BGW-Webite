@@ -39,7 +39,7 @@ export const TwoRight = () => {
         </div>
         <div className="expert-btn" onClick={movetoSection3}>
             <p>Business With Us</p>
-            <FontAwesomeIcon id="arrow2" icon={faArrowRight} size="lg" />
+            <FontAwesomeIcon id="arrow2" icon={faArrowRight} size="sm" />
         </div>
     </div>
   )
