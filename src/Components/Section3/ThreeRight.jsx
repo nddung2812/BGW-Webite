@@ -27,16 +27,20 @@ export const ThreeRight = () => {
   let menuClass = activated ? "right-menu" : "right-menu activated";
 
   useLayoutEffect(() => {
-    gsap.to(".wheel-right", {
-      x: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".two",
-        start: "top center",
-        scrub: 1,
-      }
+    let ctx = gsap.context(() => {
+      gsap.to(".wheel-right", {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".two",
+          start: "bottom bottom",
+          stop: "bottom center",
+          scrub: 1,
+        }
+      })
     })
-  },[])
+    return () => ctx.revert()
+  },[]);
 
 
   return (

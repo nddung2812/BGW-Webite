@@ -29,15 +29,19 @@ export const FourLeft = ({ divValue, setActivated }) => {
   }
 
   useLayoutEffect(() => {
-    gsap.to('.four-left-ctn', {
-      x: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: '.three',
-        start: "top center",
-        scrub: true
-      }
+	  let ctx = gsap.context(() => {
+      gsap.to('.four-left-ctn', {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: '.three',
+          start: "bottom bottom",
+          stop: "bottom center",
+          scrub: 1
+        }
+      })
     })
+    return () => ctx.revert()  
   }, [])
 
   return (

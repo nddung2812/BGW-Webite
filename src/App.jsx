@@ -1,5 +1,8 @@
 import { useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import './App.css'
 
 import { BGWLogo } from './Components/Global/BGWLogo.jsx';
@@ -26,17 +29,39 @@ import { MCarousel } from './Components/Section6/MCarousel';
 
 
 function App() {
-
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const [divValue, setDivValue] = useState("industrial");
   const [activated, setActivated] = useState(true);
 
   useLayoutEffect(() => {
-    gsap.to(".four-projects-ctn", {
-      opacity: 1,
-      duration: 1.5,
-      ease: 'none',
-    });
-}, [activated])
+    let ctx = gsap.context(() => {
+      gsap.to(".four-projects-ctn", {
+        opacity: 1,
+        duration: 1.5,
+        ease: 'none',
+      })
+
+    })
+    return () => ctx.revert()
+  }, [activated])
+
+
+  useLayoutEffect(() => {
+    
+    let ctx = gsap.context(() => {
+      gsap.utils.toArray(".section").forEach(item => {
+        ScrollTrigger.create({
+          trigger: item,
+          start: "top top",
+          pin: true,
+          pinSpacing: false,
+          snap: true,
+        })
+      })
+    })
+    return () => ctx.revert()
+    
+  },[])
 
   return (
     <div className="App">
@@ -86,11 +111,11 @@ function App() {
         } 
       </div>
 
-      <div className='section five'>
+      <div className="unpinned-sectionsection five">
         <Timeline />
       </div>
     
-      <div className="section six">
+      <div className="unpinned-sectionsection six">
         <MCarousel />     
       </div>
     </div>

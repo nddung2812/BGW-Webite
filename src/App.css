@@ -9,18 +9,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .section {
   height: 100vh;
+  position: sticky;
+  display: flex;
 }
 .one {
   background-color: #1D1D1F;
-  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .one-left {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -29,7 +32,6 @@
 }
 
 .one-right {
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -39,20 +41,17 @@
 
 .two {
   background-color: #8b2727;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .three {
-  display: flex;
   align-items: center;
   justify-content: center;  
   background-color: #1D1D1F;
 }
 
 .four {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
 	background-color: #8b2727;
@@ -79,15 +78,19 @@
 }
 
 .five {
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1D1D1F;
   height: 153vh;
 }
 
 .six {
+  height: 100vh;
+}
+
+.unpinned-sectionsection {
   background-color: #1D1D1F;
+  position: sticky;
+  display: flex;
 }
 
 

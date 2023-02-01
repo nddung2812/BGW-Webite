@@ -24,134 +24,139 @@ export const Timeline = () => {
   }
 
   useLayoutEffect(() => {
-    gsap.to(".vertical-line", {
-      height: 1300,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".five",
-        start: "top 65%",
-        end: "bottom 22%",
-        scrub: true,
-      }
-    })
+    let ctx = gsap.context(() => {
+      gsap.to(".vertical-line", {
+        height: 1300,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".five",
+          start: "top 65%",
+          end: "bottom 22%",
+          scrub: true,
+        }
+      })
 
-    gsap.to(".yoyo-start", {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".five",
-        start: "top 65%",
-        end: "top 50%",
-        scrub: true,
-      }
-    })
+      gsap.to(".yoyo-start", {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".five",
+          start: "top 65%",
+          end: "top 50%",
+          scrub: true,
+        }
+      })
 
-    gsap.to("#arrow5", {
-      y: 2,
-      repeat: -1,
-      duration: 1,
-      yoyo: true,
-      opacity: 1
+      gsap.to("#arrow5", {
+        y: 2,
+        repeat: -1,
+        duration: 1,
+        yoyo: true,
+        opacity: 1
+      })
     })
-  })
+    return () => ctx.revert()
+  }, [])
 
   useLayoutEffect(() => {
-    const timelineX = gsap.timeline({scrollTrigger: {
-      trigger: ".five",
-      start: "top 90%",
-      end: "bottom 50%",
-      scrub: true,
-    }})
+    let ctx = gsap.context(() => {
+      const timelineX = gsap.timeline({scrollTrigger: {
+        trigger: ".five",
+        start: "top 90%",
+        end: "bottom 50%",
+        scrub: true,
+      }})
 
-    timelineX.to(".sec0", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec0", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec2", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec2", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec1", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec1", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec4", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec4", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec3", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec3", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec6", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec6", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec5", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec5", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec8", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec8", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec7", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec7", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec10", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec10", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec9", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec9", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec12", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec12", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec11", {
-      x: 0,
-      opacity: 1
-    })
-    
-    timelineX.to(".sec14", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec11", {
+        x: 0,
+        opacity: 1
+      })
+      
+      timelineX.to(".sec14", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec13", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec13", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec16", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec16", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".sec15", {
-      x: 0,
-      opacity: 1
-    })
+      timelineX.to(".sec15", {
+        x: 0,
+        opacity: 1
+      })
 
-    timelineX.to(".last-tl-sec", {
-      x: 0,
-      opacity: 1
+      timelineX.to(".last-tl-sec", {
+        x: 0,
+        opacity: 1
+      })
     })
-
+    return () => ctx.revert()
   },[])
 
 

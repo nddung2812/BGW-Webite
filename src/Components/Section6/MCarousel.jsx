@@ -47,28 +47,34 @@ export const MCarousel = () => {
   }
 
 
-  function getBgPos(i){ //returns the background-position string to create parallax movement in each image
-    return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-i*36)/360*500 )+'px 0px';
+  function getBgPos(e){ //returns the background-position string to create parallax movement in each image
+    return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-e*36)/360*500 )+'px 0px';
   } 
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
+      gsap.timeline()
+      .set('.img-ctn',  { // apply transform rotations to each image
+        rotateY: (e)=> e*-32.72,
+        transformOrigin: '50% 50% 1500rem',
+        z: -1450,
+        backgroundPosition:(e)=>getBgPos(e),
+        backfaceVisibility:'hidden'
+      });
+          
+      stage.current.addEventListener('mousedown', dragStart);
+      stage.current.addEventListener('mouseup', dragEnd);
+      stage.current.addEventListener('touchstart', dragStart);
+      stage.current.addEventListener('touchend', dragEnd);
 
-    gsap.timeline()
-        .set('.img-ctn',  { // apply transform rotations to each image
-          rotateY: (i)=> i*-32.72,
-          transformOrigin: '50% 50% 1500rem',
-          z: -1450,
-          backgroundPosition:(i)=>getBgPos(i),
-          backfaceVisibility:'hidden'
-        })    
+    }, ring)
+    return () => ctx.revert();
+  },[])
 
-    stage.current.addEventListener('mousedown', dragStart);
-    stage.current.addEventListener('mouseup', dragEnd);
-    stage.current.addEventListener('touchstart', dragStart);
-    stage.current.addEventListener('touchend', dragEnd);
 
-    let mm = gsap.matchMedia();
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
       mm.add(
         "(min-width: 677px)", () => {
           gsap.to(ring.current, {
@@ -80,11 +86,10 @@ export const MCarousel = () => {
               scrub: true,
             }
           })
-        }
-      )
-    },ring)
-    return () => ctx.revert();
-  },[])
+        })
+      })
+      return () => ctx.revert();
+    })
   
   return (
     <div className="stage" 

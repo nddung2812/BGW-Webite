@@ -23,6 +23,7 @@ export const ProjectCarousel = ({ activated, setActivated }) => {
           ease: 'none',
         });
       })
+      return () => ctx.revert()
   }, [activated])
 
   return (
