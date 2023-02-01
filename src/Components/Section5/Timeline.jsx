@@ -14,10 +14,11 @@ export const Timeline = () => {
   useLayoutEffect(() => {
     gsap.to(".vertical-line", {
       height: 1300,
+      opacity: 1,
       scrollTrigger: {
         trigger: ".five",
         start: "top 65%",
-        end: "bottom 40%",
+        end: "bottom 22%",
         scrub: true,
       }
     })
@@ -136,14 +137,26 @@ export const Timeline = () => {
           <div className="bg bg1">
             <img src={AllBusinessLogos[1]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1947</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Samios Plumbing Supplies Est.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec3">
           <div className="bg bg3">
             <img src={AllBusinessLogos[3]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1975</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Sherriff Electrical Wholesalers Est.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec5">
@@ -151,7 +164,13 @@ export const Timeline = () => {
           <div className="bg bg5">
             <img src={AllBusinessLogos[5]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1985</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Specialist Electrical Solutions Est.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec7">
@@ -159,7 +178,13 @@ export const Timeline = () => {
           <div className="bg bg7">
             <img src={AllBusinessLogos[7]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2004</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Samios Plumbing Supplies purchased by BGW.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec9">
@@ -167,15 +192,26 @@ export const Timeline = () => {
           <div className="bg bg9">
             <img src={AllBusinessLogos[9]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2006</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Air Additions purchased by BGW
+            </div>
+          </div>
         </section>
 
         <section className="sec sec11">
-         
           <div className="bg bg11">
             <img src={AllBusinessLogos[11]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2009</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              CNW Energy Est. by BGW.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec13">
@@ -183,7 +219,13 @@ export const Timeline = () => {
           <div className="bg bg13">
             <img src={AllBusinessLogos[13]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2013</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              BGW Tech Est. by BGW.
+            </div>
+          </div>
         </section>
 
         <section className="sec sec15">
@@ -191,26 +233,45 @@ export const Timeline = () => {
           <div className="bg bg13">
             <img src={AllBusinessLogos[15]} alt="" />
           </div>
-          <div className="left-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2019</div>
+            <div className="left-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
         </section>
 
       </div>
 
       <div className="xAxis-line">
+        <div className="yoyo-start"></div>
         <div className="vertical-line"></div>
-        <div className="arrow-down"></div>
+        <div className="yoyo"></div>
       </div>
 
       <div className="five-right">
         <section className="sec sec2">
-          <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1938</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              Robert Fergusson Est.
+            </div>
+          </div>
           <div className="bg bg2">
             <img src={AllBusinessLogos[0]} alt="" />
           </div>
         </section>
   
         <section className="sec sec4">
-          <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1952</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg4">
             <img src={AllBusinessLogos[2]} alt="" />
           </div>
@@ -218,7 +279,13 @@ export const Timeline = () => {
         </section>
 
         <section className="sec sec6">
-          <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1982</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
 
           <div className="bg bg6">
             <img src={AllBusinessLogos[4]} alt="" />
@@ -227,7 +294,13 @@ export const Timeline = () => {
         </section>
 
         <section className="sec sec8">
-          <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">1996</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg8">
             <img src={AllBusinessLogos[6]} alt="" />
           </div>
@@ -235,7 +308,13 @@ export const Timeline = () => {
         </section>
   
         <section className="sec sec10">
-        <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2005</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg10">
             <img src={AllBusinessLogos[8]} alt="" />
           </div>
@@ -243,7 +322,13 @@ export const Timeline = () => {
         </section>
 
         <section className="sec sec12">
-        <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2007</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg12">
             <img src={AllBusinessLogos[10]} alt="" />
           </div>
@@ -251,7 +336,13 @@ export const Timeline = () => {
         </section>
   
         <section className="sec sec14">
-        <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2012</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg14">
             <img src={AllBusinessLogos[12]} alt="" />
           </div>
@@ -259,7 +350,13 @@ export const Timeline = () => {
         </section>
 
         <section className="sec sec16">
-        <div className="right-horizontal-line"></div>
+          <div className="tl-text-ctn">
+            <div className="upper-tl-text">2015</div>
+            <div className="right-horizontal-line"></div>
+            <div className="lower-tl-text">
+              ILA Est. by BGW.
+            </div>
+          </div>
           <div className="bg bg14">
             <img src={AllBusinessLogos[14]} alt="" />
           </div>
