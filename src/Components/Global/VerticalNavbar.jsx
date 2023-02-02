@@ -58,13 +58,12 @@ export const VerticalNavbar = () => {
       duration: 1.5,
       ease: "slow(0.7, 0.7, fasle)",
       scrollTo: {
-        y: '.one',
+        y: 0,
       }
     })
   }
 
   const movetoSection2 =() => {
-
     gsap.to(window,{
       duration: 1.5,
       ease: "slow(0.7, 0.7, fasle)",

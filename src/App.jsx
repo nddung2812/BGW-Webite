@@ -41,6 +41,15 @@ function App() {
         ease: 'none',
       })
 
+      gsap.to(".vertical-nav", {
+        x: -30,
+        scrollTrigger: {
+          trigger: ".five",
+          start: "bottom center",
+          scrub: true, 
+        }
+      })
+
     })
     return () => ctx.revert()
   }, [activated])

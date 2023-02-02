@@ -1,22 +1,22 @@
 .navigation {
-	height: 5rem;
+	height: 6rem;
   width: 2rem;
 	display: flex;
   flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
   z-index: 0;
 }
 
 .icon, .active {
-  margin: 3px 0;
+  margin: 5px 0;
   z-index: 1;
   cursor: pointer;
 }
 
 .icon {
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 0.6rem;
+  height: 0.6rem;
   background: #d13939;
   border-radius: 100%;
   box-shadow: 

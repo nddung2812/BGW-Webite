@@ -8,10 +8,10 @@ export const BGWLogo = () => {
   gsap.registerPlugin(ScrollToPlugin);
   const move1 = () => {
     gsap.to(window, {
-      duration: 0.6,
+      duration: 1,
       ease: "slow(0.7, 0.7, fasle)",
       scrollTo: {
-        y: ".one",
+        y: 0,
       }
     })
   }
