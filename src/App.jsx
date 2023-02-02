@@ -56,17 +56,20 @@ function App() {
 
 
   useLayoutEffect(() => {
-    
+    let mm = gsap.matchMedia();
     let ctx = gsap.context(() => {
-      gsap.utils.toArray(".section").forEach(item => {
-        ScrollTrigger.create({
-          trigger: item,
-          start: "top top",
-          pin: true,
-          pinSpacing: false,
-          scrub: true
+      mm.add(
+        "(min-width: 677px)", () => {
+        gsap.utils.toArray(".section").forEach(item => {
+          ScrollTrigger.create({
+            trigger: item,
+            start: "top top",
+            pin: true,
+            pinSpacing: false,
+            scrub: true
+          })
         })
-      })
+      })  
     })
     return () => ctx.revert()
     
