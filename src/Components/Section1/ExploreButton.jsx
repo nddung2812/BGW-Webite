@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import "./ExploreButton.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export const ExploreButton = ({two}) => {
-  gsap.registerPlugin(ScrollToPlugin);
+export const ExploreButton = ({ movetoSection2 }) => {
 
 useEffect(() => {
   gsap.to("#arrow1", {
@@ -22,7 +20,7 @@ useEffect(() => {
 
   return (
     <div className="explore-container" >
-      <div className="find-out-btn">
+      <div className="find-out-btn" onClick={movetoSection2}>
         <p>Find out more</p> 
         <FontAwesomeIcon id="arrow1" icon={faArrowRight} size="sm" /></div>
     </div>  

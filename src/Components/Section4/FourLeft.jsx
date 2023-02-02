@@ -11,7 +11,7 @@ import {
   faClockRotateLeft
 } from '@fortawesome/free-solid-svg-icons';
 
-export const FourLeft = ({ divValue, setActivated, five }) => {
+export const FourLeft = ({ divValue, setActivated, movetoSection5 }) => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(ScrollToPlugin);
   const handleClick = () => {
@@ -46,6 +46,7 @@ export const FourLeft = ({ divValue, setActivated, five }) => {
           <FontAwesomeIcon id="image-icon" icon={faImage}/>
         </div>
         <div className="history-btn" 
+          onClick={movetoSection5}
         >
           <p>Our History</p>
           <FontAwesomeIcon 

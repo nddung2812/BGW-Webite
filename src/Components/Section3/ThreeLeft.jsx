@@ -1,12 +1,10 @@
 import "./ThreeLeft.css";
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-export const ThreeLeft = ({ four }) => {
-    gsap.registerPlugin(ScrollToPlugin);
+export const ThreeLeft = ({ movetoSection4 }) => {
 
     useEffect(() => {
       gsap.to("#arrow3", {
@@ -29,7 +27,7 @@ export const ThreeLeft = ({ four }) => {
             benefits. 
             </p>
         </div>
-        <div className="supply-btn">
+        <div className="supply-btn" onClick={movetoSection4}>
             <p>Our Experience</p>
             <FontAwesomeIcon id="arrow3" icon={faArrowRight} size="sm" />
         </div>

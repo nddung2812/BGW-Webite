@@ -1,12 +1,10 @@
 import './TwoRight.css';
 import { useEffect } from 'react';
 import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-export const TwoRight = ({three}) => {
-    gsap.registerPlugin(ScrollToPlugin);
+export const TwoRight = ({ movetoSection3 }) => {
     useEffect(() => {
       gsap.to("#arrow2", {
         x: 6,
@@ -27,7 +25,7 @@ export const TwoRight = ({three}) => {
             <p>We provide extensive expertise, innovative solutions, materials management, and quality 
             systems to effectively manage any project, large or small, across Australia and overseas. </p>
         </div>
-        <div className="expert-btn">
+        <div className="expert-btn" onClick={movetoSection3}>
             <p>Business With Us</p>
             <FontAwesomeIcon id="arrow2" icon={faArrowRight} size="sm" />
         </div>

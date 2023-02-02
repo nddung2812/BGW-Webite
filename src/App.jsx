@@ -38,6 +38,71 @@ function App() {
   const four = useRef();
   const five = useRef();
   const six = useRef();
+
+
+  const movetoSection1 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: 0,
+      }
+    })
+  }
+
+  const movetoSection2 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: two.current,
+      }
+    })
+  }
+
+  const movetoSection3 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: three.current,
+      }
+    })
+  }
+
+  const movetoSection4 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: four.current,
+      }
+    })
+  }
+
+  const movetoSection5 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: five.current,
+      }
+    })
+  }
+
+  const movetoSection6 = () => {
+    gsap.to(window,{
+      duration: 1.5,
+      ease: "slow(0.7, 0.7, false)",
+      scrollTo: {
+        y: six.current,
+      }
+    })
+  }
+
+
+
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".four-projects-ctn", {
@@ -82,15 +147,21 @@ function App() {
 
   return (
     <div className="App">
-      <BGWLogo />
+      <BGWLogo movetoSection1={movetoSection1} />
       <div className="vertical-nav">
-        <VerticalNavbar />
+        <VerticalNavbar 
+          movetoSection1={movetoSection1}
+          movetoSection2={movetoSection2}
+          movetoSection3={movetoSection3}
+          movetoSection4={movetoSection4}
+          movetoSection5={movetoSection5}
+        />
       </div>
 
       <div className='section one' ref={one}>
         <div className="one-left" >
           <TextReveal />
-          <ExploreButton two={two}/>
+          <ExploreButton movetoSection2={movetoSection2}/>
         </div>
         <div className="one-right">
           <Tilt3dBackground />
@@ -99,11 +170,11 @@ function App() {
 
       <div className='section two' ref={two}>
           <TwoLeft  />
-          <TwoRight three={three}/>
+          <TwoRight movetoSection3={movetoSection3}/>
       </div>
       
       <div className='section three' ref={three}>
-          <ThreeLeft four={four} />
+          <ThreeLeft movetoSection4={movetoSection4} />
           <ThreeRight />
       </div>
 
@@ -112,7 +183,7 @@ function App() {
             <FourLeft 
               divValue={divValue}
               setActivated={setActivated}
-              five={five}
+              movetoSection5={movetoSection5}
             />
             <FourRight 
               divValue={divValue}
@@ -130,11 +201,17 @@ function App() {
       </div>
 
       <div className="unpinned-sectionsection five" ref={five}>
-        <Timeline />
+        <div className="five-1">
+          <Timeline 
+            movetoSection6={movetoSection6} 
+          />
+        </div>
+        <div className="five-2">
+          <MCarousel />     
+        </div>
       </div>
     
       <div className="unpinned-sectionsection six" ref={six}>
-        <MCarousel />     
       </div>
     </div>
   )

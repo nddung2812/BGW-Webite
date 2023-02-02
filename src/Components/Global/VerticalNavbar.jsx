@@ -3,7 +3,13 @@ import { gsap } from 'gsap';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import "./VerticalNavbar.css";
 
-export const VerticalNavbar = () => {
+export const VerticalNavbar = ({
+  movetoSection1,
+  movetoSection2,
+  movetoSection3,
+  movetoSection4,
+  movetoSection5
+}) => {
   gsap.registerPlugin(ScrollToPlugin);
   const [active1, setActive1] = useState("active");
   const [active2, setActive2] = useState("icon");
@@ -55,15 +61,15 @@ export const VerticalNavbar = () => {
 
   return (
     <div className="navigation">
-        <div className={active1} >
+        <div className={active1} onClick={movetoSection1}>
         </div>
-        <div className={active2} >
+        <div className={active2} onClick={movetoSection2}>
         </div>
-        <div className={active3} >
+        <div className={active3} onClick={movetoSection3}>
         </div>
-        <div className={active4} >
+        <div className={active4} onClick={movetoSection4}>
         </div>
-        <div className={active5} >
+        <div className={active5} onClick={movetoSection5}>
         </div>
     </div>
   )

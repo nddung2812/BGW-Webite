@@ -79,7 +79,18 @@
 .five {
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  height: 253vh;
+}
+
+.five-1 {
   height: 153vh;
+  padding: 3% 0;
+}
+
+.five-2 {
+  height: 100vh;
+  width: 100%;
 }
 
 .six {
@@ -89,6 +100,7 @@
 .unpinned-sectionsection {
   background-color: #1D1D1F;
   display: flex;
+  position: sticky;
 }
 
 
@@ -139,5 +151,15 @@
     background-color: transparent;
     box-shadow: none;
     margin-left: 1rem;
+  }
+
+  .unpinned-sectionsection {
+    background-color: #1D1D1F;
+    display: flex;
+    position: relative;
+  }
+
+  .five-1 {
+    width: 100%;
   }
 }

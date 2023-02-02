@@ -2,7 +2,6 @@ import { useLayoutEffect } from "react";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import AllBusinessLogos from "../Logos/TimelineBusiness";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -10,18 +9,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import "./Timeline.css";
 
 
-export const Timeline = () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-  const moveToSection6 = () => {
-    gsap.to(window, {
-      duration: 1,
-      ease: "slow(0.7, 0.7, false)",
-      scrollTo: {
-        y: ".six",
-      }
-    })
-  }
+export const Timeline = ({ movetoSection6 }) => {
+  gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -29,7 +18,7 @@ export const Timeline = () => {
         height: 1300,
         opacity: 1,
         scrollTrigger: {
-          trigger: ".five",
+          trigger: ".five-1",
           start: "top 65%",
           end: "bottom 22%",
           scrub: true,
@@ -39,7 +28,7 @@ export const Timeline = () => {
       gsap.to(".yoyo-start", {
         opacity: 1,
         scrollTrigger: {
-          trigger: ".five",
+          trigger: ".five-1",
           start: "top 65%",
           end: "top 50%",
           scrub: true,
@@ -60,7 +49,7 @@ export const Timeline = () => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const timelineX = gsap.timeline({scrollTrigger: {
-        trigger: ".five",
+        trigger: ".five-1",
         start: "top 90%",
         end: "bottom 50%",
         scrub: true,
@@ -399,7 +388,7 @@ export const Timeline = () => {
         </section>
 
         <section className="sec last-tl-sec">
-          <div className="tl-bottom-btn" onClick={moveToSection6}>
+          <div className="tl-bottom-btn" onClick={movetoSection6}>
             <p>See our team</p>
             <FontAwesomeIcon id="arrow5" icon={faArrowDown} size="sm" />  
           </div>
