@@ -18,16 +18,6 @@ export const FourLeft = ({ divValue, setActivated, five }) => {
     setActivated(false);
   }
 
-  const moveToSection5 = () => {
-    gsap.to(window, {
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, false)",
-      scrollTo: {
-        y: five.current,
-      }
-    })
-  }
-
   useLayoutEffect(() => {
 	  let ctx = gsap.context(() => {
       gsap.to('.four-left-ctn', {
@@ -56,7 +46,6 @@ export const FourLeft = ({ divValue, setActivated, five }) => {
           <FontAwesomeIcon id="image-icon" icon={faImage}/>
         </div>
         <div className="history-btn" 
-          onClick={moveToSection5}
         >
           <p>Our History</p>
           <FontAwesomeIcon 

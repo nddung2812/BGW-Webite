@@ -8,15 +8,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const ExploreButton = ({two}) => {
   gsap.registerPlugin(ScrollToPlugin);
-  const movetoSection3 = () => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, false)",
-      scrollTo: {
-        y: two.current,
-      }
-    })
-  }
 
 useEffect(() => {
   gsap.to("#arrow1", {
@@ -31,7 +22,7 @@ useEffect(() => {
 
   return (
     <div className="explore-container" >
-      <div className="find-out-btn" onClick={movetoSection3}>
+      <div className="find-out-btn">
         <p>Find out more</p> 
         <FontAwesomeIcon id="arrow1" icon={faArrowRight} size="sm" /></div>
     </div>  

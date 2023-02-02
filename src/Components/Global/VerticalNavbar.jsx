@@ -53,69 +53,17 @@ export const VerticalNavbar = () => {
     })
   },[]);
 
-  const movetoSection1 =() => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, fasle)",
-      scrollTo: {
-        y: 0,
-      }
-    })
-  }
-
-  const movetoSection2 =() => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, fasle)",
-      scrollTo: {
-        y: '.two',
-      }
-    })
-  }
-
-  const movetoSection3 =() => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, fasle)",
-      scrollTo: {
-        y: '.three',
-      }
-    })
-  }
-
-  
-  const movetoSection4 =() => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, fasle)",
-      scrollTo: {
-        y: '.four',
-      }
-    })
-  }
-
-    
-  const movetoSection5 =() => {
-    gsap.to(window,{
-      duration: 1.5,
-      ease: "slow(0.7, 0.7, fasle)",
-      scrollTo: {
-        y: '.five',
-      }
-    })
-  }
-
   return (
     <div className="navigation">
-        <div className={active1} onClick={movetoSection1}>
+        <div className={active1} >
         </div>
-        <div className={active2} onClick={movetoSection2}>
+        <div className={active2} >
         </div>
-        <div className={active3} onClick={movetoSection3}>
+        <div className={active3} >
         </div>
-        <div className={active4} onClick={movetoSection4}>
+        <div className={active4} >
         </div>
-        <div className={active5} onClick={movetoSection5}>
+        <div className={active5} >
         </div>
     </div>
   )

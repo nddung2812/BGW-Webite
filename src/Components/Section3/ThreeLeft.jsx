@@ -7,15 +7,6 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export const ThreeLeft = ({ four }) => {
     gsap.registerPlugin(ScrollToPlugin);
-    const movetoSection3 = () => {
-      gsap.to(window,{
-        duration: 1.5,
-        ease: "slow(0.7, 0.7, false)",
-        scrollTo: {
-          y: four.current,
-        }
-      })
-    }
 
     useEffect(() => {
       gsap.to("#arrow3", {
@@ -38,7 +29,7 @@ export const ThreeLeft = ({ four }) => {
             benefits. 
             </p>
         </div>
-        <div className="supply-btn" onClick={movetoSection3}>
+        <div className="supply-btn">
             <p>Our Experience</p>
             <FontAwesomeIcon id="arrow3" icon={faArrowRight} size="sm" />
         </div>
