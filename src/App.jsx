@@ -64,7 +64,7 @@ function App() {
           start: "top top",
           pin: true,
           pinSpacing: false,
-          snap: true,
+          scrub: true
         })
       })
     })
