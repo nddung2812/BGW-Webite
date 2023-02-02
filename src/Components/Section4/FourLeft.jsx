@@ -11,7 +11,7 @@ import {
   faClockRotateLeft
 } from '@fortawesome/free-solid-svg-icons';
 
-export const FourLeft = ({ divValue, setActivated }) => {
+export const FourLeft = ({ divValue, setActivated, five }) => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(ScrollToPlugin);
   const handleClick = () => {
@@ -23,7 +23,7 @@ export const FourLeft = ({ divValue, setActivated }) => {
       duration: 1.5,
       ease: "slow(0.7, 0.7, false)",
       scrollTo: {
-        y: ".five",
+        y: five.current,
       }
     })
   }

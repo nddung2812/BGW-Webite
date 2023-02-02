@@ -5,14 +5,14 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-export const TwoRight = () => {
+export const TwoRight = ({three}) => {
     gsap.registerPlugin(ScrollToPlugin);
     const movetoSection3 = () => {
       gsap.to(window,{
         duration: 1.5,
         ease: "slow(0.7, 0.7, false)",
         scrollTo: {
-          y: ".three",
+          y: three.current,
         }
       })
     }

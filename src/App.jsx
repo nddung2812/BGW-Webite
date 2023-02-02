@@ -32,7 +32,12 @@ function App() {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const [divValue, setDivValue] = useState("industrial");
   const [activated, setActivated] = useState(true);
+  const one = useRef();
   const two = useRef();
+  const three = useRef();
+  const four = useRef();
+  const five = useRef();
+  const six = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".four-projects-ctn", {
@@ -44,7 +49,7 @@ function App() {
       gsap.to(".vertical-nav", {
         x: -30,
         scrollTrigger: {
-          trigger: ".five",
+          trigger: five.current,
           start: "bottom center",
           scrub: true, 
         }
@@ -54,27 +59,6 @@ function App() {
     return () => ctx.revert()
   }, [activated])
 
-
-  // useLayoutEffect(() => {
-  //   let mm = gsap.matchMedia();
-  //   let ctx = gsap.context(() => {
-  //     mm.add(
-  //       "(min-width: 677px)", () => {
-  //       gsap.utils.toArray(".section").forEach(item => {
-  //         ScrollTrigger.create({
-  //           trigger: item,
-  //           start: "top top",
-  //           pin: true,
-  //           pinSpacing: false,
-  //           scrub: true
-  //         })
-  //       })
-  //     })  
-  //   })
-  //   return () => ctx.revert()
-    
-  // },[])
-
   return (
     <div className="App">
       <BGWLogo />
@@ -82,7 +66,7 @@ function App() {
         <VerticalNavbar />
       </div>
 
-      <div className='section one'>
+      <div className='section one' ref={one}>
         <div className="one-left" >
           <TextReveal />
           <ExploreButton two={two}/>
@@ -93,20 +77,21 @@ function App() {
       </div>
 
       <div className='section two' ref={two}>
-          <TwoLeft />
-          <TwoRight />
+          <TwoLeft  />
+          <TwoRight three={three}/>
       </div>
       
-      <div className='section three'>
-          <ThreeLeft />
+      <div className='section three' ref={three}>
+          <ThreeLeft four={four} />
           <ThreeRight />
       </div>
 
-      <div className='section four'>
+      <div className='section four' ref={four}>
         {activated ? <div className="four-ctn">
             <FourLeft 
               divValue={divValue}
               setActivated={setActivated}
+              five={five}
             />
             <FourRight 
               divValue={divValue}
@@ -123,11 +108,11 @@ function App() {
         } 
       </div>
 
-      <div className="unpinned-sectionsection five">
+      <div className="unpinned-sectionsection five" ref={five}>
         <Timeline />
       </div>
     
-      <div className="unpinned-sectionsection six">
+      <div className="unpinned-sectionsection six" ref={six}>
         <MCarousel />     
       </div>
     </div>
