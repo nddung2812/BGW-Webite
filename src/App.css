@@ -85,6 +85,10 @@
 
 .five-1 {
   height: 153vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 3% 0;
 }
 
@@ -159,7 +163,5 @@
     position: relative;
   }
 
-  .five-1 {
-    width: 100%;
-  }
+ 
 }
