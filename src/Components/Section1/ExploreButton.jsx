@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./ExploreButton.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export const ExploreButton = () => {
+export const ExploreButton = ({two}) => {
   gsap.registerPlugin(ScrollToPlugin);
   const movetoSection3 = () => {
     gsap.to(window,{
       duration: 1.5,
       ease: "slow(0.7, 0.7, false)",
       scrollTo: {
-        y: ".two",
+        y: two.current,
       }
     })
   }

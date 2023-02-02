@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -32,7 +32,7 @@ function App() {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   const [divValue, setDivValue] = useState("industrial");
   const [activated, setActivated] = useState(true);
-
+  const two = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".four-projects-ctn", {
@@ -85,14 +85,14 @@ function App() {
       <div className='section one'>
         <div className="one-left" >
           <TextReveal />
-          <ExploreButton />
+          <ExploreButton two={two}/>
         </div>
         <div className="one-right">
           <Tilt3dBackground />
         </div>
       </div>
 
-      <div className='section two'>
+      <div className='section two' ref={two}>
           <TwoLeft />
           <TwoRight />
       </div>
