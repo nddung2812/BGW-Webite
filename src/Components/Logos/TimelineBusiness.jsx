@@ -1,15 +1,14 @@
-import cnw from "../../assets/images/cnwElectrical.png"
-import sherriff from "../../assets/images/sherriff1.png"
-import samios from "../../assets/images/samios.png"
-import cableMakers from "../../assets/images/cableMaker.png"
-import ses from "../../assets/images/ses.png"
-import bgwt from "../../assets/images/bgwt.jpg"
-import wea from "../../assets/images/wea.png"
-import ila from "../../assets/images/ila.png"
-import robert from "../../assets/images/robert.jpg"
-import mms from "../../assets/images/mms.png"
-import airAddition from "../../assets/images/airAddition.png"
-import bgwGS from "../../assets/images/bgwGS.png"
-import cnwEngergy from "../../assets/images/cnwEnergy.jpg"
+const cnw = "https://bgwgroup.com.au/Logos/cnwLogo.png"
+const sherriff = "https://bgwgroup.com.au/Logos/sherriffLogo.jpg"
+const samios = "https://bgwgroup.com.au/Logos/samiosLogo.png"
+const cableMakers = "https://bgwgroup.com.au/Logos/cableMakerLogo.png"
+const ses = "https://bgwgroup.com.au/Logos/sesLogo.png"
+const bgwt = "https://bgwgroup.com.au/Logos/bgwtLogo.jpg"
+const wea = "https://bgwgroup.com.au/Logos/newWeaLogo.png"
+const ila = "https://bgwgroup.com.au/Logos/ilaLogo.png"
+const robert = "https://bgwgroup.com.au/Logos/robertLogo.jpg"
+const airAddition = "https://bgwgroup.com.au/Logos/airAdditionLogo.png"
+const cnwEnergy = "https://bgwgroup.com.au/Logos/cnwEnergyLogo.jpg"
+const bgwLogoText = "https://bgwgroup.com.au/Logos/bgwGroupLogoGGmap.png";
 
-export default [robert, samios, cnw, sherriff, bgwt, ses, airAddition, samios, sherriff, airAddition, robert, cnwEngergy, cableMakers, bgwt, wea, ila];
+export default [robert, samios, cnw, sherriff, bgwLogoText, ses, airAddition, samios, sherriff, airAddition, robert, cnwEnergy, cableMakers, bgwt, wea, ila];

@@ -27,21 +27,76 @@ export const ThreeRight = () => {
   let menuClass = activated ? "right-menu" : "right-menu activated";
 
   useLayoutEffect(() => {
+    ScrollTrigger.create({
+      trigger: ".three",
+      start: "top 40%",
+      endTrigger: ".four",
+      end: "top 70%",
+      onEnter: () => setActivated(!activated),
+      onEnterBack: () => setActivated(!activated),
+      onLeave: () => setActivated(activated),
+      onLeaveBack: () => setActivated(activated),
+    })
+  },[])
+
+  useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".wheel-right", {
-        x: 0,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: ".two",
-          start: "bottom bottom",
-          stop: "bottom center",
-          scrub: 1,
-        }
-      })
+        gsap.to(".wheel-right", {
+          x: 0,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: ".three",
+            start: "top 90%",
+            end: "top 15%",
+            scrub: 1,
+          }
+        })
     })
     return () => ctx.revert()
   },[]);
 
+  const threeData = [
+    {
+      icon: <FontAwesomeIcon icon={faCertificate} />,
+      text: "Exceptional Service" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faTruck} />,
+      text: "Supplier Consolidation" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faCartShopping} />,
+      text: "Simplified Procurement" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faShare} />,
+      text: "National Distribution Network" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faLaptopCode} />,
+      text: "E-Commerce Capability" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faLightbulb} />,
+      text: "Sustainability and Innovation" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faLink} />,
+      text: "Sophisticated Supply Chain Solutions" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faGlobe} />,
+      text: "Global Expertise" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faFileShield} />,
+      text: "Quality and Safety" 
+    },
+    {
+      icon: <FontAwesomeIcon icon={faChartColumn} />,
+      text: "Customised Reporting" 
+    },
+  ]
 
   return (
     <div className="three-right-ctn">
@@ -51,66 +106,16 @@ export const ThreeRight = () => {
               <FontAwesomeIcon id="handshake" icon={faHandshake} size="5x"  />
               <h1>We simplify your life</h1>
             </div>
-            <li className="right-li1">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faCertificate} color="#d13939"/>  
-                <p>Exceptional Service</p>
-              </div>
-            </li>
-            <li className="right-li2">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faTruck} color="#d13939"/>  
-                <p>Supplier Consolidation</p>
-              </div>
-            </li>
-            <li className="right-li3">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faCartShopping} color="#d13939"/>  
-                <p>Simplified Procurement</p>
-              </div>
-            </li>
-            <li className="right-li4">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faShare} color="#d13939"/>  
-                <p>National Distribution Network</p>
-              </div>
-            </li>
-            <li className="right-li5">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faLaptopCode} color="#d13939"/>  
-                <p>E-Commerce Capability</p>
-              </div>
-            </li>
-            <li className="right-li6">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faLightbulb} color="#d13939"/>  
-                <p>Sustainability and Innovation</p>
-              </div>
-            </li>
-            <li className="right-li7">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faLink} color="#d13939"/>  
-                <p>Sophisticated Supply Chain Solutions</p>
-              </div>
-            </li>
-            <li className="right-li8">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faGlobe} color="#d13939"/>  
-                <p>Global Expertise</p>
-              </div>
-            </li>
-            <li className="right-li9">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faFileShield} color="#d13939"/>  
-                <p>Quality and Safety</p>
-              </div>
-            </li>
-            <li className="right-li10">
-              <div className="solution-btn">
-                <FontAwesomeIcon icon={faChartColumn} color="#d13939"/>  
-                <p>Customised Reporting</p>
-              </div>
-            </li>
+            {threeData.map((item, i) => {
+              return (
+                <li className={"right-li" + Number(i+1)} key={i}>
+                  <div className="solution-btn">
+                    {item.icon}
+                    <p>{item.text}</p>
+                  </div>
+                </li>
+              )
+            })}
           </div> 
       </div>
     </div>

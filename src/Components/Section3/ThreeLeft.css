@@ -1,49 +1,41 @@
 .three-left-ctn {
     color: #fff;
-    margin-right: 4rem;
-    width: 28%;
+    width: 38rem;
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .doing-business-heading h1 {
-    opacity: 0.9;
     text-transform: uppercase;
-    font-size: 3.5rem;   
+    font-size: 4rem;   
     padding-right: 2rem;
 }
 
-.doing-business-heading h1:hover {
-    opacity: 1;
-}
-
 .business-text {
-    height: 5.5rem;
-    margin-top: 1rem;
-    border-bottom: 1px solid #d13939;
-    padding-bottom: 1rem;
-    opacity: 0.9;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.45rem;
 }
 
-.business-text:hover {
-    opacity: 1;
+.business-text p {
+    margin-bottom: 1rem;
 }
 
 .supply-btn {
-    height: 3rem;
-    margin-top: 1.5rem;
-    width: 10rem;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    width: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #8b2727;
-    box-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.75),
-    inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-    inset -3px -3px 5px rgba(0, 0,0 ,0.5);
-    border-radius: 2rem;
-    font-size: 0.8rem;
+    border-radius: 0.1rem;
+    font-size: 1rem;
+    font-weight: 300;
     transition: 800ms;
     cursor: pointer;
 }
@@ -53,36 +45,76 @@
 }
 
 .supply-btn p {
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
 }
 
 #arrow3 {
     opacity: 0.1;
 }
 
-@media(max-width: 678px) {
+@media(max-width: 768px) {
     .three-left-ctn {
-        width: 68%;
+        width: 85%;
         height: 50%;
         margin-right: 0;
+        margin-top: 1rem;
     }
 
     .doing-business-heading h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-right: 0;   
     }
 
     .business-text {
-        height: 5rem;
-        margin-top: 0.5rem;
-        padding-bottom: 0;
-        font-size: 0.7rem;
-    }
-    .supply-btn {
-        height: 2.3rem;
+        height: 11rem;
         margin-top: 1rem;
-        width: 8rem;
-        font-size: 0.65rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .supply-btn {
+        height: 3rem;
+        margin-top: 1rem;
+        width: 11rem;
+        font-size: 1rem;
     }
     
+  }
+
+  @media(max-width: 1350px) and (min-width: 769px) { 
+    .three-left-ctn {
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .doing-business-heading h1 {
+        font-size: 2.5rem;
+        padding-right: 0;   
+    }
+
+    .business-text {
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .supply-btn {
+        height: 3rem;
+        margin-top: 1rem;
+        width: 11rem;
+        font-size: 1rem;
+    }
+  }
+
+  
+  @media (max-width: 768px) and (orientation: landscape) {
+  
+    .three-left-ctn {
+        width: 80%;
+    }
+    .business-text {
+        height: 5.5rem;
+    }
   }

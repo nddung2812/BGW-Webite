@@ -1,0 +1,152 @@
+.sec4a-main-ctn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 8rem;
+}
+
+.why-work-top-heading-ctn h1 {
+    height: 3.5rem;
+    font-size: 3rem;
+    color: #f6f6f9;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d13939;
+}
+
+.why-work-bottom-career-btn {
+    margin-top: 2rem;
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #8b2727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.why-work-bottom-career-btn a{
+    text-decoration: none;
+    color: #f6f6f9;
+    font-weight: 300;
+}
+
+.why-work-bottom-career-btn:hover {
+    background-color: #d13939;
+    transition: 400ms;
+}
+
+
+.why-work-main-swiper {
+    width: 100%;
+    /* height: 100%; */
+    margin: 1rem 0;
+  }
+  
+  .why-work-swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    height: 35rem;
+  }
+  
+  .why-work-swiper-slide img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .why-work-swiper-slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 50%;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 0.9)
+        );
+    display: flex;
+    align-items: end;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+    
+.why-work-swiper-slide-text li {
+    color: #f6f6f9;
+    margin: 0 2rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  @media (max-width: 1500px) and (min-width: 769px) {
+    .why-work-top-heading-ctn h1 {
+        font-size: 2rem;
+        height: 2.5rem;
+    }
+
+    .why-work-swiper-slide {
+        height: 30rem;
+    }
+
+    .why-work-swiper-slide img {
+        width: 80%;
+    }
+
+    .why-work-swiper-slide-text {
+        width: 80%;
+    }
+
+    .why-work-swiper-slide-text li {
+        margin: 2rem;
+        font-size: 1.2rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .sec4a-main-ctn {
+        padding: 2rem 0;
+    }
+    .why-work-top {
+        width: 100%;
+    }
+
+    .why-work-top-heading-ctn h1 {
+        font-size: 2rem;
+        height: 2.5rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .why-work-swiper-slide {
+        height: 20rem;
+      }
+
+    .why-work-swiper-slide img {
+        width: 100%;
+    }
+    .why-work-swiper-slide-text {
+        width: 100%;
+        height: 80%;
+    }
+    .why-work-swiper-slide-text li {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .why-work-bottom-career-btn {
+        width: 11rem;
+        height: 3rem;
+        background-color: #8b2727;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+  }

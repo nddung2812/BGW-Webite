@@ -1,72 +1,68 @@
 .two-right-ctn {
-    width: 30%;
-    color: rgba(255, 255, 255, 0.900);
+    width: 38rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    color: #fff;
   }
 
   .right-partner-heading {
     width: 90%;
-    transition: 200ms;
-  }
-
-  .right-partner-heading:hover {
-    color: #fff;
-    transition: 200ms;
   }
 
   .right-partner-heading h1 {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .right-partner-text {
-    height: 5rem;
-    margin-top: 1rem;
-    border-bottom: 1px solid black;
-  }
-  
-  .right-partner-text:hover {
-    color: #fff;
-    transition: 200ms;
+    height: 7rem;
+    width: 95%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 1.45rem;
   }
 
   .expert-btn {
-    height: 3.1rem;
+    height: 3.5rem;
     margin-top: 1.5rem;
-    width: 10.5rem;
+    width: 11.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1D1D1F;
-    box-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.75),
-    inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-    inset -3px -3px 5px rgba(0, 0,0 ,0.5);
-    border-radius: 2rem;
-    font-size: 0.8rem;
+    background-color: #8b2727;
+    border-radius: 0.1rem;
+    font-size: 1rem;
+    font-weight: 300;
     transition: 400ms;
     cursor: pointer;
   }
 
+  .expert-btn:hover {
+    background-color: #d13939;
+  }
+
   .expert-btn p {
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
   }
 
   #arrow2 {
     opacity: 0.1;
   }
 
-  @media(max-width: 678px) {
+  @media(max-width: 768px) {
     .two-right-ctn {
-      width: 70%;
-      height: 40%;
+      width: 85%;
+      height: 48%;
+      margin-left: 0;
+      margin-top: 2rem;
     }
 
     .right-partner-heading h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     .right-partner-heading {
@@ -74,16 +70,60 @@
     }
 
     .right-partner-text {
-      height: 4rem;
-      font-size: 0.7rem;
+      height: 9rem;
+      font-size: 1.2rem;
+      padding-bottom: 0;
     }
 
     .expert-btn {
-      height: 2.5rem;
+      height: 3rem;
       margin-top: 1rem;
-      width: 9rem;
-      border-radius: 2rem;
-      font-size: 0.7rem;
+      width: 11rem;
+      border-radius: 0.1rem;
+      font-size: 1rem;
     }
   
   }
+
+  @media(max-width: 1350px) and (min-width: 769px) { 
+    .two-right-ctn {
+      width: 38%;
+      margin-top: -3rem;
+      padding: 0 0 0 2rem;
+    }
+
+    .right-partner-heading h1 {
+      font-size: 2.5rem;
+    }
+
+    .right-partner-heading {
+      width: 100%;
+    }
+
+    .right-partner-text {
+      height: 8rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .expert-btn {
+      height: 3rem;
+      margin-top: 1rem;
+      width: 11rem;
+      border-radius: 0.1rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+  
+    .two-right-ctn {
+      width: 80%;
+    }
+
+    .right-partner-text {
+      height: 6rem;
+    }
+
+  }
+  

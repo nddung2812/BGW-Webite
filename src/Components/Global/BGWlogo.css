@@ -1,29 +1,47 @@
 .bgw-logo-ctn {
-    z-index: 1;
-    cursor: pointer;
-    box-shadow: 
-    4px 4px 8px rgba(0, 0, 0, 0.75),
-    inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-    inset -3px -3px 5px rgba(0, 0,0 ,0.5);
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 4rem;
-    height: 4rem;
+  z-index: 1;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 9;
 }
 
 .bgw-logo-ctn img {
   transition: 300ms;
-  width: 4rem;
-  border-radius: 0.1rem;
+  width: 3rem;
+  box-shadow: 
+  2px 2px 4px rgba(0, 0, 0, 0.75),
+  inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+  inset -2px -2px 4px rgba(0, 0,0 ,0.5);
+  opacity: 0.9;
 }
-  
+
 #bgw-logo:hover {
-  width: 4.2rem;
   transition: 400ms;
+  opacity: 1;
 }
 
 @media(max-width: 678px) {
+  .bgw-logo-ctn {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .bgw-logo-ctn img {
+    width: 1.5rem;
+  }
+
+  #bgw-logo:hover {
+    width: 1.6rem;
+  }
+}
+
+@media(max-width: 1024px) and (min-width: 678px) {
   .bgw-logo-ctn {
     width: 1.5rem;
     height: 1.5rem;

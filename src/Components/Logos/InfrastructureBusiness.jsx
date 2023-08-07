@@ -1,12 +1,13 @@
-import cnw from "../../assets/images/cnwElectrical.png";
-import sherriff from "../../assets/images/sherriff.jpg";
-import cnwEnergy from "../../assets/images/cnwEnergy.jpg";
-import samios from "../../assets/images/samios.png";
-import ses from "../../assets/images/ses.png";
-import bgwt from "../../assets/images/bgwt.jpg";
-import bgwGS from "../../assets/images/bgwGS.png";
-import airAddition from "../../assets/images/airAddition.png";
-import wea from "../../assets/images/wea.png";
-import ila from "../../assets/images/ila.png";
+const cnw = "https://bgwgroup.com.au/Logos/cnwLogo.png"
+const sherriff = "https://bgwgroup.com.au/Logos/sherriffLogo.jpg"
+const samios = "https://bgwgroup.com.au/Logos/samiosLogo.png"
+const ses = "https://bgwgroup.com.au/Logos/sesLogo.png"
+const bgwt = "https://bgwgroup.com.au/Logos/bgwtLogo.jpg"
+const wea = "https://bgwgroup.com.au/Logos/newWeaLogo.png"
+const ila = "https://bgwgroup.com.au/Logos/ilaLogo.png"
+const airAddition = "https://bgwgroup.com.au/Logos/airAdditionLogo.png"
+const cnwEnergy = "https://bgwgroup.com.au/Logos/cnwEnergyLogo.jpg"
+const bgwGS = "https://bgwgroup.com.au/Logos/bgwGSLogo.png"
+
 
 export default [cnw, sherriff, cnwEnergy, samios, ses, bgwt, bgwGS, airAddition, wea, ila];

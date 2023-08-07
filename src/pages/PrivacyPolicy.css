@@ -1,0 +1,89 @@
+.privacy-ctn {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1b1b;
+    color: #f6f6f9;
+    text-align: justify;
+}
+
+.return-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f6f6f9;
+}
+
+.privacy-policy-heading {
+    margin-top: 5rem;
+    height: 10rem;
+    font-size: 2rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px double #d13939;
+    margin-bottom: 2rem;
+}
+
+.privacy-policy-body {
+    font-size: 1rem;
+    font-weight: 300;
+    width: 60%;
+    line-height: 1.5;
+}
+
+.privacy-policy-body p {
+    margin: 1rem 0;
+}
+
+.complaint-form-ctn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complaint-form-ctn form {
+    width: 70%;
+}
+
+@media(max-width: 678px) {
+
+    .privacy-policy-heading {
+        margin-top: 2rem;
+        width: 90%;
+        height: 5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .privacy-policy-body {
+        font-size: 0.85rem;
+        width: 90%;
+    }
+
+    .privacy-policy-body p {
+        margin: 0.4rem;
+    }
+
+    .return-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .complaint-form-ctn form {
+        width: 100%;
+    }
+}

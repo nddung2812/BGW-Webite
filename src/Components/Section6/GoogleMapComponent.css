@@ -1,0 +1,161 @@
+#google-map-ctn {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-map-sidebar-ctn {
+    width: 0;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.google-map-sidebar-logos-ctn {
+    width: 95%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    padding: 1%;
+    border: 1px solid grey;
+    background: #f3ebebb7;
+    transition: 400ms;
+}
+
+.google-map-sidebar-logos-ctn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 400ms;
+}
+
+.google-map-sidebar-logos-ctn img:hover {
+    transform: scale(0.9);
+    transition: 400ms;
+}
+
+.google-map-sidebar-logos-ctn:hover {
+    transition: 400ms;
+    cursor: pointer;
+    background: #f3ebebef;
+}
+
+.sidebar-see-all {
+    background-color: #8b2727;
+    border: 1px solid #8b2727;
+    color: #f6f6f9;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.sidebar-see-all:hover {
+    background-color: #d13939;
+}
+
+#map-heading {
+    height: 3rem;
+    width: 12rem;
+    position: absolute;
+    z-index: 10;
+    transform: translateX(4px) translateY(4px);
+    font-size: 1.5rem;
+}
+
+.gm-style-iw-d {
+    color: #1d1d1f;
+}
+
+.infowindow-ctn h1{
+    font-size: 1rem;
+    color: #d13939;
+}
+
+.infowindow-ctn h2 {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.infowindow-ctn h2 span {
+    font-weight: 600;
+}
+
+.select-company {
+    position: relative; 
+    top: 0.5rem;
+    left: 1rem;
+    width: 50%;
+}
+
+.select-individual-company {
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 8rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #f6f6f9;
+}
+
+.select-individual-company:hover {
+    color: #d13939;
+}
+
+.select-company select {
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.google-close-sidebar-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #f6f6f9;
+}
+
+.google-close-sidebar-btn:hover {
+    color: #d13939;
+}
+
+@media (max-width: 1350px) and (min-width: 769px) {
+    #google-map-ctn {
+        height: 25rem;
+    }
+}
+
+
+@media(max-width: 768px) {
+    #google-map-ctn {
+        height: 16rem;
+    }
+
+    .select-company {
+        left: 0.5rem;
+    }
+
+    .sidebar-see-all {
+        font-size: 0.7rem;
+    }
+
+    .google-close-sidebar-btn {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .select-individual-company {
+        font-size: 0.7rem;
+    }
+}

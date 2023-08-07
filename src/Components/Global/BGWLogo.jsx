@@ -1,11 +1,12 @@
 import "./BGWlogo.css";
-import Logo from "../../assets/images/bgwgroup.jpg";
 
 export const BGWLogo = ({ movetoSection1 }) => {
 
+const bgwLogo = "https://bgwgroup.com.au/Logos/bgwLogo.png";
+
   return (
     <div className='bgw-logo-ctn' onClick={movetoSection1}>
-      <img id="bgw-logo" src={Logo} alt="BGWlogo" />
+      <img id="bgw-logo" src={bgwLogo} alt="BGWlogo" />
     </div>
   )
 }

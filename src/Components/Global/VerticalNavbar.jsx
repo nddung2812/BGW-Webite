@@ -20,28 +20,28 @@ export const VerticalNavbar = ({
   useLayoutEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollNumber = window.scrollY;
-      if (scrollNumber < 725) {
+      if (scrollNumber < 650) {
         setActive1("active");
         setActive2("icon");
         setActive3("icon");
         setActive4("icon");
         setActive5("icon");
       }
-      if (scrollNumber > 726 && scrollNumber < 1520) {
+      if (scrollNumber > 650 && scrollNumber < 1400) {
         setActive1("icon");
         setActive2("active");
         setActive3("icon");
         setActive4("icon");
         setActive5("icon");
       }
-      if (scrollNumber > 1521 && scrollNumber < 2520) {
+      if (scrollNumber > 1401 && scrollNumber < 2350) {
         setActive1("icon");
         setActive2("icon");
         setActive3("active");
         setActive4("icon");
         setActive5("icon");
       }
-      if (scrollNumber > 2521 && scrollNumber < 3590) {
+      if (scrollNumber > 2351 && scrollNumber < 3200) {
         setActive1("icon");
         setActive2("icon");
         setActive3("icon");
@@ -49,7 +49,7 @@ export const VerticalNavbar = ({
         setActive5("icon");
       }
 
-      if (scrollNumber > 3591 && scrollNumber < 4650) {
+      if (scrollNumber > 3201 && scrollNumber < 3750) {
         setActive1("icon");
         setActive2("icon");
         setActive3("icon");

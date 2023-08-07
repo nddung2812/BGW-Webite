@@ -1,12 +1,11 @@
 .bg-3d-container {
-  width: 42rem;
-  transition: 0.5s;
-  opacity: 0;
+  width: 40rem;
 }
 
 .image-box {
-  perspective: 600px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-box video {
@@ -14,24 +13,64 @@
   height: auto;
   box-shadow: 0px 0px 100px #d13939;
   object-fit: contain;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
 }
 
-@media(max-width: 430px) {
+.corp-video-loader-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corp-video-loader {
+  border: 2px solid #222;
+  border-top: 2px solid #c00;
+  margin: 10px auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: spinLoader 2s linear infinite;
+  margin-right: 1rem;
+}
+
+.corp-video-textloader {
+  color: #f6f6f9;
+  font-size: 1.2rem;
+}
+
+@keyframes spinLoader {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 768px) {
   .bg-3d-container {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .image-box video {
-    border-radius: 5px;
+    border-radius: 0.1rem;
   }
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1780px) {
+@media(max-width: 1350px) and (min-width: 769px) { 
   .bg-3d-container {
-    right: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-box video {
+    border-radius: 0.1rem;
   }
 }
+

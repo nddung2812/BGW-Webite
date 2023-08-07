@@ -4,7 +4,7 @@ export const TextReveal = () => {
   return (
     <>
       <div className="text-container">
-        <div className="bgw-text-line1">B<strong>G</strong>W</div>
+        <div className="bgw-text-line1">BGW</div>
         <div className='bgw-text-line2'>GROUP<sup className="trademark">™</sup></div>
       </div>
       <div className="p-ctn">

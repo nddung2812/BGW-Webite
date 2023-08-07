@@ -18,14 +18,387 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #1D1D1F;
+  background-color: #000000e0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(24, 147, 151);
+  background-color: rgb(43, 46, 46);
   border-radius: 10vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(240, 171, 22);
+  background-color: #D13939;
 }
+
+.App {
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-nav {
+  position: fixed;
+  width: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.section {
+  display: flex;
+}
+
+.one {
+  width: 100%;
+  height: 60rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 13%;
+}
+
+.one-right {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-right: 5rem;
+  margin-left: 2rem;
+}
+
+.two {
+  width: 100%;
+  height: 50rem;
+  align-items: center;
+  justify-content: space-evenly;  
+}
+
+.three {
+  width: 100%;
+  height: 55rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.four {
+  width: 100%;
+  height: 55rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.four-projects-ctn {
+  width: 65%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: #fff;
+  opacity: 0;
+}
+
+.five {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.five-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+}
+
+.five-2 {
+  height: 60rem;
+  width: 100%;
+}
+
+.six {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.five-2:hover ~.cursor {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 0.8rem;
+  z-index: 1;
+  opacity: 1;
+  transition: 400ms;
+}
+
+.section-bg {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:0;
+}
+
+.bg-one {
+  visibility: visible;
+  z-index: -8;
+  transition: 800ms;
+  border: 1px solid transparent;
+}
+
+.bg-two {
+  visibility: hidden;
+  z-index: -7;
+  transition: 800ms;
+  opacity: 0;
+}
+
+.bg-three {
+  visibility: hidden;
+  z-index: -6;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.bg-five {
+  visibility: hidden;
+  z-index: -4;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.bg-six {
+  visibility: hidden;
+  z-index: -3;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.bg-front-cover {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: -9;
+  position: fixed;
+  top: 0;
+  background-color: rgba(8, 8, 8, 0.85);
+  background-blend-mode: darken;
+  overflow: hidden;
+}
+
+.bg-img-one {
+  background-image: url("https://bgwgroup.com.au/BGWgroupSiteImages/Background/bg1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.bg-img-two {
+  background-image: url("https://bgwgroup.com.au/BGWgroupSiteImages/Background/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img-three {
+  background-image: url("https://bgwgroup.com.au/BGWgroupSiteImages/Background/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img-five {
+  background-image: url("https://bgwgroup.com.au/BGWgroupSiteImages/Background/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img-six {
+  background-image: url("https://bgwgroup.com.au/BGWgroupSiteImages/Background/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    display: grid;
+    place-items: center;
+    background: #D13939;
+    color: white;
+    font-size: 0.5rem;
+    opacity: 0;
+    z-index: -9;
+    transition: 400ms;
+  }
+
+@media(max-width: 1350px) and (min-width: 769px) { 
+  .vertical-nav {
+    display: none;
+  }
+
+  .one {
+    height: 30rem;
+    justify-content: space-around;
+  }
+
+  .one-right {
+    padding-right: 0;
+    margin-left: 1rem;
+    width: 40%;
+
+  }
+
+  .one-left {
+    padding-left: 0;
+    width: 35%;
+  }
+
+  .two {
+    height: 30rem;
+  }
+
+  .three {
+    height: 30rem;
+  }
+
+  .four {
+    height: 30rem;
+  }
+
+  .five-2 {
+    height: 30rem;
+  }
+
+  .six {
+    height: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .one {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .one-left {
+    padding-left: 0;
+    width: 85%;
+  }
+  
+  .one-right {
+    padding-right: 0;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+
+  .vertical-nav {
+    display: none;
+  }
+
+  .two {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .three {
+    height: 60rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  
+  .four {
+    height: 65rem;
+    flex-direction: column;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .five {
+    height: 100%;
+  }
+
+  .five-1 {
+    padding: 3rem 0;
+  }
+
+  .five-2:hover ~.cursor {
+    display: none;
+  }
+
+  .five-2 {
+    height: 25rem;
+    display: none;
+  }
+ 
+  .six {
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .bg-two, .bg-three, .bg-four, .bg-five, .bg-six {
+    display: none;
+  }
+  .bg-one {
+    visibility: visible;
+    z-index: -7;
+    transition: 800ms;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .one {
+    height: 48rem;
+  }
+
+  .one-left {
+    width: 80%;
+  }
+
+  .one-right {
+    width: 80%;
+  }
+
+  .two {
+    height: 48rem;
+  }
+}
+

@@ -22,9 +22,7 @@ export const ThreeLeft = ({ movetoSection4 }) => {
             <h1>Doing Business With Us</h1>
         </div>
         <div className="business-text">
-            <p>Whether you are a sole tradesman or the procurement officer for a large multinational, we take the time to 
-            understand your needs so we can provide personalised service, effective and safe solutions, and business 
-            benefits. 
+            <p>Whether you are a sole tradesman or the procurement officer for a large multinational, we take the time to understand your needs so we can provide personalised service, effective and safe solutions, and holistic business benefits.
             </p>
         </div>
         <div className="supply-btn" onClick={movetoSection4}>

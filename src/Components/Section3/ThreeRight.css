@@ -1,10 +1,8 @@
 .three-right-ctn {
   width: 30%;
-  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5%;
 }
 
 .wheel-right {
@@ -13,7 +11,7 @@
   display: grid;
   place-items: center;
   opacity: 0;
-  transform: translateX(1000px);
+  transform: translateX(500px);
 }
 
 .right-menu {
@@ -25,9 +23,9 @@
 
 .right-menu li {
     position: absolute;
-    left: -19rem;
+    left: -23rem;
     list-style: none;
-    transform-origin: 19rem;
+    transform-origin: 23rem;
     transition: 1s;
     transform: rotate(0deg) translateX(15rem);
     z-index: -1;
@@ -50,9 +48,9 @@
 
 .solution-btn p {
   color: #f6f6f9;
-  font-size: 0.65rem;
-  height: 1.7rem;
-  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  height: 3rem;
 }
 
 .right-menu .right-li1 {
@@ -100,12 +98,12 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 6.5rem;
+    height: 6.5rem;
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    color: #111;
+    color: #d13939;
     transition: 0.5s;
     box-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.75),
@@ -279,15 +277,14 @@
 }
 
 .right-toggle h1 {
-  color: #fff;
+  color: #f6f6f9;
   font-size: 2.6rem;
   width: 20rem;
 }
 
 .right-menu.activated .right-toggle {
     transform: rotate(360deg) scale(0.65);
-    color: rgba(0, 202, 0, 0.63);
-    background-color: #1b2b1b;
+    background-color: #131313;
     box-shadow: 
     6px 6px 10px rgba(255, 255, 255, 0.25),
     inset 4px 4px 8px rgba(0, 0, 0, 0.25),
@@ -295,33 +292,33 @@
 }
 
 
-@media(max-width: 678px) {
+@media(max-width: 768px) {
   .wheel-right {
     width: 100%;
-    height: 40vh;
+    transform: translateX(0);
   }
 
   .three-right-ctn {
-    width: 70%;
-    height: 40vh;
+    width: 85%;
+    height: 25rem;
     padding-left: 0;
   }
 
   .right-toggle h1 {
-    font-size: 1rem;
-    width: 6rem;
+    font-size: 1.5rem;
+    width: 9rem;
   }
 
   .right-menu li {
     position: absolute;
-    left: -9.5rem;
-    transform-origin: 9.5rem;
+    left: -11.3rem;
+    transform-origin: 11.3rem;
     transform: rotate(0deg) translateX(5rem);
   }
 
   .right-menu li .solution-btn {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
     transition: 400ms;
   }
 
@@ -329,7 +326,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    padding: 5.5rem;
+    padding: 6.5rem;
   }
   
   .solution-btn {
@@ -339,7 +336,79 @@
   }
 
   .solution-btn p {
-    font-size: 6px;
+    font-size: 8px;
+    margin-top: 0.2rem;
+    height: 1.5rem;
+    padding: 0 2px;
+    width: 100%;
+  }
+
+  .right-menu.activated .right-toggle {
+    transform: rotate(360deg) scale(0.65);
+    box-shadow: 
+    3px 3px 7px rgba(255, 255, 255, 0.25),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+  #handshake {
+    width: 5rem;
+  }
+
+  .right-toggle:hover {
+    transform: none;
+    box-shadow: 
+    4px 4px 7px rgba(0, 0, 0, 0.75),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0,0 ,0.5);
+  }
+}
+
+@media(max-width: 1350px) and (min-width: 769px) { 
+  .wheel-right {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  .three-right-ctn {
+    width: 35%;
+    padding-left: 0;
+  }
+
+  .right-toggle h1 {
+    font-size: 1.2rem;
+    width: 8rem;
+  }
+
+  .right-menu li {
+    position: absolute;
+    left: -11.5rem;
+    transform-origin: 11.5rem;
+    transform: rotate(0deg) translateX(5rem);
+  }
+
+  .right-menu li .solution-btn {
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: 400ms;
+    justify-content: center;
+  }
+
+  .right-toggle {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    padding: 6.5rem;
+  }
+  
+  .solution-btn {
+    font-size: 1rem; 
+    padding: 0.75rem;
+    height: 1rem;
+  }
+
+  .solution-btn p {
+    font-size: 8px;
     margin-top: 0.1rem;
     height: 1rem;
     padding: 0 2px;

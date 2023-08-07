@@ -1,141 +1,126 @@
 .four-right-ctn {
-    width: 35%;
-    height: 70%;
+    width: 38rem;
+    height: 100%;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 7rem;
 }
 
-.four-right-ctn:hover {
-    opacity: 1;
-}
 
 .four-right-ctn h1 {
-    opacity: 0.9;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
-.four-right-ctn h1:hover {
-    opacity: 1;
-}
-
 .industry-text {
-    height: 5.5rem;
-    margin-top: 1rem;
-    border-bottom: 1px solid #000;
-    padding-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.industry-text:hover {
-    opacity: 1;
-}
-
-.main-industries {
-    height: 2rem;
+    height: 10rem;
     margin-top: 1.5rem;
-    opacity: 0.9;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
-.main-industries:hover {
-    opacity: 1;
-}
-
-.industries-ctn {
-    height: 12rem;
+.projects-btn {
     margin-top: 1.5rem;
-    padding: 0.5rem;
-    font-size: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
-.industry {
-    width: 6rem;
-    height: 5rem;
-    margin: 0.5rem 0.7rem;
+.history-btn {
+    height: 3.5rem;
+    width: 11rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem;
-    background-color: #1D1D1F;
-    box-shadow: 
-	2px 2px 4px rgba(0, 0, 0, 0.75),
-	inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-	inset -3px -3px 5px rgba(0, 0,0 ,0.5);
-    color: #d13939;
-    transition: 400ms;
-}
-
-.industry-top-layer {
-    position: absolute;
-    width: 6rem;
-    height: 5rem;
-    z-index: 999;
+    background-color: #8b2727; 
+    border-radius: 0.1rem;
+    margin: 0 1.5rem 0 0;
     cursor: pointer;
-  }
-
-.industry:hover {
-   transform: scale(1.05);
-    transition: 400ms;
+    transition: 800ms;
+    font-size: 1rem;
 }
 
-.clicked {
-    background: #1d4230f8;
-    box-shadow: 
-      2px 2px 4px rgba(255, 255, 255, 0.25),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.25),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.25);
-    color: #f6f6f9;
+ .history-btn:hover {
+    background-color: #d13939;
+}
+    
+.history-btn p {
+    margin-right: 0.4rem;
 }
 
-@media(max-width: 678px) {
+@media(max-width: 768px) {
     .four-right-ctn {
         width: 85%;
-        height: 40vh;
+        height: 30rem;
         padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .four-right-ctn h1 {
+        font-size: 2.5rem;
+    }
+
+    .industry-text {
+        height: 12rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .history-btn {
+        height: 3rem;
+        width: 11rem;
+        transition: 800ms;
+        font-size: 1rem;
+    }
+
+    .projects-btn {
+        margin-top: 1rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1350px) and (min-width: 769px) {
+    .four-right-ctn {
+        width: 40%;
+        padding-left: 0;
+        height: unset;
     }
 
     .four-right-ctn h1 {
         opacity: 1;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
-    .industries-ctn {
-        height: 8rem;
-        width: 100%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-    }
-
-    .industry {
-        width: 3.2rem;
-        height: 3rem;
-        margin: 0.2rem 0.3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.4rem;
-    }
-    
     .industry-text {
-        display: none;
-    }
-
-    .main-industries {
-        height: 1rem;
-        margin-top: 1rem;
-        opacity: 1;
-    }
-
-    .industry-top-layer {
-        width: 3rem;
-        height: 3rem;
+        font-size: 1.2rem;
+        height: 100%;
       }
-  
+
+    .history-btn {
+        height: 3rem;
+        width: 11rem;
+        border-radius: 0.1rem;
+    }
+    .projects-btn {
+        margin-top: 0.5rem;
+    }
 }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  
+    .industry-text {
+      height: 7rem;
+    }
+
+    .four-right-ctn {
+        width: 80%;
+    }
+  }

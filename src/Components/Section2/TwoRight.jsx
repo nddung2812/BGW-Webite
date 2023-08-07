@@ -26,7 +26,7 @@ export const TwoRight = ({ movetoSection3 }) => {
             systems to effectively manage any project, large or small, across Australia and overseas. </p>
         </div>
         <div className="expert-btn" onClick={movetoSection3}>
-            <p>Business With Us</p>
+            <p>Business with Us</p>
             <FontAwesomeIcon id="arrow2" icon={faArrowRight} size="sm" />
         </div>
     </div>

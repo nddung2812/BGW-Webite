@@ -1,72 +1,49 @@
 #partner-ctn {
   width: 100%;
-  height: 25rem;
+  height: 100%;
   display: flex;
-  margin-top: 1rem;
-  border-bottom: 1px solid #d13939;
-}
-
-.industry-name {
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  opacity: 0.9;
-  text-transform: uppercase;
-}
-
-.industry-name:hover {
-  opacity: 1;
-}
-
-.wholesaler-text {
-  font-size: 1rem;
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
+  margin-top: 0.5rem;
 }
 
 .partner-businesses {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .partner-business {
-  height: 10rem;
+  height: 64%;
   width: 100%;
-  margin-top: 1rem;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 60% 60%;
+  column-gap: 0.3rem;
+  grid-template-columns: repeat(4, 24.5%);
+  grid-template-rows: repeat(3, 33%);
 }
 
 .business-logo-ctn {
-  width: 60%;
-  height: 55%;
+  width: 77%;
+  height: 70%;
   padding: 0.7rem;
   margin: 0.3rem 0.3rem;
   background-color: rgb(130, 130, 130);
-  box-shadow: 
-	2px 2px 8px rgba(0, 0, 0, 0.75),
-	inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-	inset -3px -3px 5px rgba(0, 0,0 ,0.5);
-  display: grid;
-  place-items: center;
-  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
 }
 
 .business-logo-ctn:hover {
   background-color: rgba(149, 148, 148, 0.97);
 }
 
+.business-logo-ctn a {
+  width: 95%;
+}
 .business-logo-ctn img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   transition: 400ms;
 }
 
@@ -76,39 +53,68 @@
   transition: 400ms;
 }
 
-@media(max-width: 678px) {
+@media(max-width: 768px) {
   #partner-ctn {
     width: 100%;
-    height: 65%;
-    margin-top: 1rem;
+    height: 70%;
     flex-direction: column;
+    margin-top: 0;
     align-items: flex-start;
   }
 
-  .wholesaler-text {
-    font-size: 0.7rem;
-    height: 1rem;
-    opacity: 1;
+  .partner-businesses {
+    margin-top: 0rem;
+    height: 100%;
   }
-
-  .industry-name {
-    height: 1rem;
-    font-size: 1rem;
-    opacity: 1;
-    margin-top: 1rem;
-  }
-
   .partner-business {
-    height: 7rem;
-    margin-top: 1rem;
-    grid-template-rows: 50% 50%;
+    height: 85%;
+    width: 100%;
+    row-gap: 0.2rem;
+    column-gap: 0.2rem;
+    margin-top: 0.5rem;
+    grid-template-rows: repeat(3, 33%);
   }
 
   .business-logo-ctn {
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     padding: 0.3rem;
-    margin: 0.2rem 0.2rem;
-    border-radius: 0.4rem;
+    margin: 0rem 0.2rem;
+    border-radius: 0.1rem;
   }
 }
+
+@media(max-width: 1350px) and (min-width: 769px) {
+  #partner-ctn {
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .partner-businesses {
+    margin-top: 0.5rem;
+  }
+
+  .partner-business {
+    height: 14.5rem;
+    width: 100%;
+    row-gap: 0.2rem;
+    column-gap: 0rem;
+    margin-top: 0.5rem;
+    grid-template-rows: repeat(3, 33%);
+  }
+
+  .business-logo-ctn {
+    width: 80%;
+    height: 80%;
+    padding: 0.3rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.1rem;
+  }
+}
+
+
+
+
